@@ -1,4 +1,4 @@
-# Predicting nitrogen level in potato plant.
+# Predicting Nitrogen Level in Potato Plant.
 
 # Goal 
 This project aims to predict the nitrogen that have been added to the potato, based on hyperspectral images. In developing this model, we aim to apply what we have learned in this course 02476 Machine Learning Operations.
