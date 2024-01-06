@@ -11,7 +11,9 @@ The images consist of 4 set of images taken in different spectrums, NIR, green, 
 # Method
 A neural network will be developed to do regression on the images. The neural network will develop in Pytorch. We expect to use a CNN. The model’s performance will be evaluated based on the r2, RMSE and MAE.
 
-
+## Work plan structure of project
+Here is a google drive link showing how we structured and delegated tasks.
+https://docs.google.com/document/d/1lLLNnOMxulvgJ_XtQBqTcpUVArmR-BCf2veG_gLhQXo/edit?usp=sharing
 
 
 
