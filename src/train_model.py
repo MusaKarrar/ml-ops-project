@@ -2,11 +2,15 @@ import os
 
 import argparse
 import torch
-
+from tqdm import tqdm
 from models.model import *
 from visualizations.visualize import *
 
-
+if torch.cuda.is_available():
+    print("GPU is available.")
+    gpu_available = True
+else:
+    print("GPU is not available. Switching to CPU.")
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
@@ -30,10 +34,17 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    model = ConvNet2D()
+    #model = my_awesome_model()
+    # Example usage:
+    model = ViT()
 
     train_images = torch.load(train_data_path)
     train_targets = torch.load("data/processed/train_targets.pt")
+
+    if gpu_available:
+        model =  model.to('cuda')
+        train_images = train_images.to('cuda')
+        train_targets = train_targets.to('cuda')
 
     train_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
@@ -45,10 +56,12 @@ def train(lr, epochs, ckpt_name, train_data_path):
     train_loss_epoch = []
     for epoch in range(epochs):
         running_loss = 0
-        for images, labels in train_loader:
-            # add dim for conv2d
-            images.resize_(images.shape[0], 1, 28, 28)
-            output = model.forward(images)
+        for images, labels in tqdm(train_loader):
+            # add dim for conv2dnet
+            images.resize_(images.shape[0], 1, 28, 28) 
+            #convert dtype of images to long
+            images = images.float()
+            output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
 
             loss = criterion(output, labels)
             loss.backward()
@@ -71,7 +84,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
             break
 
-    print("done training and saved model")
+    print(f"done training and saved model to {save_path}")
 
 
 if __name__ == "__main__":
