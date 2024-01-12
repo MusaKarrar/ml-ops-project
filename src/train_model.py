@@ -35,8 +35,8 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    model = ConvNet2D()
-    #model = ViT()
+    #model = ConvNet2D()
+    model = ViT()
 
     data_images = torch.load(train_data_path)
     data_targets = torch.load("data/processed/train_targets.pt")
@@ -51,9 +51,9 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    train_loader = torch.utils.data.DataLoader(data_set, batch_size=64, shuffle=True)
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
 
-    criterion = nn.MSELoss()
+    criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
 
     optimizer.zero_grad()

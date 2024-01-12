@@ -86,7 +86,7 @@ class PatchEmbedding(nn.Module):
         b, n, _ = x.shape
         cls_tokens = repeat(self.cls_token, '1 1 d -> b 1 d', b = b)
         x = torch.cat((cls_tokens, x), dim=1)
-        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype)
+        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype) if torch.cuda.is_available() else self.pos_embedding[:, :(n + 1)]
         return x
 
 class MultiHeadAttentionBlock(nn.Module):
@@ -190,16 +190,16 @@ class ViT(nn.Module):
         batch_size: int, batch size
     """
 
-    def __init__(self, img_shape = (28, 28),
-               in_channels = 1,
-               patch_shape = (14, 14),
+    def __init__(self, img_shape = (160, 106),
+               in_channels = 4,
+               patch_shape = (32, 53), #should be factor of 160 and 106
                d_model = 512,
                num_transformer_layers = 2, # from table 1 above
                dropout_rate = 0.2,
                mlp_size = 1048,
                num_heads = 4,
-               num_classes = 10,
-               batch_size = 64):
+               num_classes = 1, #regression problem, so only one output
+               batch_size = 16):
         super().__init__()
 
         self.patch_embedding_layer = PatchEmbedding(in_channels = in_channels,
