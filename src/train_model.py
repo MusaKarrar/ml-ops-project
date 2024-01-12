@@ -35,8 +35,8 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    model = ConvNet2D()
-    #model = ViT()
+    #model = ConvNet2D()
+    model = ViT()
 
     data_images = torch.load(train_data_path)
     data_targets = torch.load("data/processed/train_targets.pt")
@@ -71,7 +71,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
             optimizer.step()
             running_loss += loss.item()
 
-        print(f"Training loss: {running_loss/len(train_targets)}")
+        print(f"Training loss (MSE): {running_loss/len(train_targets)}")
         #print validation loss
         model.eval()
         output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
@@ -79,7 +79,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
         val_loss = criterion(output, val_targets)
 
         val_loss /= len(val_targets)
-        print(f'Validation loss:', val_loss)
+        print(f'Validation loss (MSE):', val_loss)
         model.train()
 
         print(f"epoch: ", epoch + 1)
