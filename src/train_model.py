@@ -51,9 +51,9 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    train_loader = torch.utils.data.DataLoader(data_set, batch_size=64, shuffle=True)
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
 
-    criterion = nn.MSELoss()
+    criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
 
     optimizer.zero_grad()
@@ -71,7 +71,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
             optimizer.step()
             running_loss += loss.item()
 
-        print(f"Training loss (MSE): {running_loss/len(train_targets)}")
+        print(f"Training loss: {running_loss/len(train_targets)}")
         #print validation loss
         model.eval()
         output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
@@ -79,7 +79,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
         val_loss = criterion(output, val_targets)
 
         val_loss /= len(val_targets)
-        print(f'Validation loss (MSE):', val_loss)
+        print(f'Validation loss:', val_loss)
         model.train()
 
         print(f"epoch: ", epoch + 1)
