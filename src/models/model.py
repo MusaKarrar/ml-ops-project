@@ -15,17 +15,17 @@ class ConvNet2D(nn.Module):
     def __init__(self):
         super().__init__()
         # torch.set_default_dtype(torch.float32)
-        self.conv1 = nn.Conv2d(1, 64, 5)  # [B, 1, 28, 28] --> [B, 64, 24, 24]
-        self.conv2 = nn.Conv2d(64, 64, 3)  # [B, 64, 26, 26] --> [B, 64, 22, 22]
-        self.maxpool2 = nn.MaxPool2d(2, padding=0)  # [B, 64, 24, 24] --> [B, 64, 11, 11]
+        self.conv1 = nn.Conv2d(4, 64, 5)  # [B, 1, 160, 106] --> [B, 64, 156, 102]
+        self.conv2 = nn.Conv2d(64, 64, 3)  # [B, 64, 156, 102] --> [B, 64, 154, 100]
+        self.maxpool2 = nn.MaxPool2d(2, padding=0)  # [B, 64, 154, 100] --> [B, 64, 77, 50]
 
-        self.fc3 = nn.Linear(64 * 11 * 11, 10)
+        self.fc3 = nn.Linear(64 * 77 * 50, 1)
 
         self.relu = nn.ReLU()
-        self.softmax = nn.Softmax(1)
+        #self.softmax = nn.Softmax(1) don't use activation for regression problem
         self.batchnorm1 = torch.nn.BatchNorm2d(64)
         self.batchnorm2 = torch.nn.BatchNorm2d(64)
-        self.batchnorm3 = torch.nn.BatchNorm1d(10)
+        self.batchnorm3 = torch.nn.BatchNorm1d(1)
 
     def forward(self, x):
         """Forward pass of the model.
@@ -37,7 +37,7 @@ class ConvNet2D(nn.Module):
             Output tensor with shape [N,out_features]
 
         """
-        x.resize_(x.shape[0], 1, 28, 28)
+        x #.resize_(x.shape[0], 1, 28, 28)
         x = self.conv1(x)
         x = self.batchnorm1(x)
         x = self.relu(x)
@@ -48,7 +48,7 @@ class ConvNet2D(nn.Module):
         x = torch.flatten(x, start_dim=1)
         x = self.fc3(x)
         x = self.batchnorm3(x)
-        x = self.softmax(x)
+        #x = self.softmax(x)
         return x
 
 
@@ -147,28 +147,28 @@ class TransformerBlock(nn.Module):
     
     """
 
-  def __init__(self, d_model,
+    def __init__(self, d_model,
                mlp_dropout,
                attn_dropout,
                mlp_size,
                num_heads,
                ):
-    super().__init__()
+        super().__init__()
 
-    self.msa_block = MultiHeadAttentionBlock(d_model = d_model,
-                                                 num_heads = num_heads,
-                                                 attn_dropout = attn_dropout)
+        self.msa_block = MultiHeadAttentionBlock(d_model = d_model,
+                                                    num_heads = num_heads,
+                                                    attn_dropout = attn_dropout)
 
-    self.ff_block = FeedForward(d_model = d_model,
-                                                    mlp_size = mlp_size,
-                                                    mlp_dropout = mlp_dropout,
-                                                    )
+        self.ff_block = FeedForward(d_model = d_model,
+                                                        mlp_size = mlp_size,
+                                                        mlp_dropout = mlp_dropout,
+                                                        )
 
-  def forward(self,x):
-    x = self.msa_block(x) + x
-    x = self.ff_block(x) + x
+    def forward(self,x):
+        x = self.msa_block(x) + x
+        x = self.ff_block(x) + x
 
-    return x
+        return x
 
 
 class ViT(nn.Module):
