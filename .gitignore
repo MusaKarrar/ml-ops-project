@@ -179,3 +179,4 @@ cython_debug/
 # Ignore data
 data/
 /data
+gdrive:https:/
