@@ -12,8 +12,15 @@ if __name__ == "__main__":
 
     # training1 test1
     # finaltraining finaltest
-    data_traning = r'data\raw\training5'
-    data_test = r'data\raw\test5'
+
+    # Uncomment below for non-mac
+    # data_traning = r'data\raw\training5'
+    # data_test = r'data\raw\test5'
+
+    # Make it work for mac, remember to be in main directory
+    data_training = 'data/raw/training5'
+    data_test = 'data/raw/test5'
+
 
     # Create empty lists to store the data and labels
     X_train, X_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)
@@ -22,14 +29,14 @@ if __name__ == "__main__":
     y_train, y_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)
 
     # Loop through the image files in the folder
-    for filename in os.listdir(data_traning):
+    for filename in os.listdir(data_training):
 
         imageCatagory = imageCatagory+1
         if filename.endswith('.tif'):  # Adjust the file format to match your data
             # Load the image using OpenCV
             all_type_img_train = np.array([[]], dtype=np.float16)
 
-            img = Image.open(os.path.join(data_traning, filename))
+            img = Image.open(os.path.join(data_training, filename))
             TF.to_tensor(img)
             transforms.ToTensor()(img)
 
