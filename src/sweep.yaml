@@ -1,4 +1,4 @@
-program: train_model.py
+program: src/train_model.py
 method: random
 metric:
   name: val_loss

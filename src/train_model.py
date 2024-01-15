@@ -1,18 +1,38 @@
 import os
-os.environ["WAND_API_KEY"] = "98ca90f0ed87a1d5fe5c5d36599f0f3ce229653d"
+os.environ["WAND_API_KEY"] = "38c3d61662e5a11172dddf1df24561c66b8ed9cb"
 import argparse
 import torch
+from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler
 from tqdm import tqdm
 from models.model import *
-# from visualizations.visualize import *
+from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb
 
+sweep_config = {
+    'name': 'sweep',
+    'method': 'random',
+    'metric': {
+        'name': 'val_loss',
+        'goal': 'minimize',
+    },
+    'parameters': {
+        'learning_rate': {
+            'min': 0.0001,
+            'max': 0.1,
+        },
+        'optimizer': {
+            'values': ['sgd'],
+        },
+    },
+}
+
 # Initialize wandb
 wandb.init(
-    project="ml-ops-project-src",
-    entity="group_25"
+    project="ml-ops-project"
 )
+
+sweep_id = wandb.sweep(sweep=sweep_config, project = "ml-ops-project")
 
 if torch.cuda.is_available():
     print("GPU is available.")
@@ -79,37 +99,38 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
     optimizer.zero_grad()
     train_loss_epoch = []
-    for epoch in range(epochs):
-        running_loss = 0
-        for images, labels in tqdm(train_loader):
-            # add dim for conv2dnet
-            #convert dtype of images to long
-            images = images.float()
-            output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+    with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True, on_trace_ready=tensorboard_trace_handler("./log/resnet18")) as prof:
+        for epoch in range(epochs):
+            running_loss = 0
+            for images, labels in tqdm(train_loader):
+                # add dim for conv2dnet
+                #convert dtype of images to long
+                images = images.float()
+                output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+                output = output.flatten()
+                output = output.flatten()
+                loss = criterion(output, labels)
+                wandb.log({"Training Loss": loss.item()}) # Log loss to wandb
+                loss.backward()
+                optimizer.step()
+                running_loss += loss.item()
+
+            print(f"Training loss: {running_loss/len(train_targets)}")
+            #print validation loss
+            model.eval()
+            output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
             output = output.flatten()
-            output = output.flatten()
-            loss = criterion(output, labels)
-            wandb.log({"Training Loss": loss.item()}) # Log loss to wandb
-            loss.backward()
-            optimizer.step()
-            running_loss += loss.item()
+            val_loss = criterion(output, val_targets)
 
-        print(f"Training loss: {running_loss/len(train_targets)}")
-        #print validation loss
-        model.eval()
-        output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
-        output = output.flatten()
-        val_loss = criterion(output, val_targets)
+            val_loss /= len(val_targets) 
+            wandb.log({"val_loss": val_loss.item()}) # Log validation loss to wandb
+            print(f'Validation loss:', val_loss)
+            model.train()
 
-        val_loss /= len(val_targets) 
-        wandb.log({"val_loss": val_loss.item()}) # Log validation loss to wandb
-        print(f'Validation loss:', val_loss)
-        model.train()
+            print(f"epoch: ", epoch + 1)
 
-        print(f"epoch: ", epoch + 1)
-
-        train_loss_epoch.append(running_loss / len(train_targets))
-    
+            train_loss_epoch.append(running_loss / len(train_targets))
+        
     # Save model to wandb and finish wandb run
     wandb.save(os.path.join(wandb.run.dir, ckpt_name)) 
     wandb.finish() 
@@ -127,6 +148,9 @@ def train(lr, epochs, ckpt_name, train_data_path):
     
 
     print(f"done training and saved model to {save_path}")
+
+    # Save the profiler output, uncomment below if tensorboard is not used
+    ## prof.export_chrome_trace("profiler_trace.json")
 
 
 if __name__ == "__main__":
