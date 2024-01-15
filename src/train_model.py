@@ -2,11 +2,20 @@ import os
 
 import argparse
 import torch
-
+from tqdm import tqdm
 from models.model import *
 from visualizations.visualize import *
+from sklearn.model_selection import train_test_split
+<<<<<<< HEAD
 
-
+=======
+>>>>>>> 0c7b030bf2704db03e7d760bb87cd4b7552fac51
+if torch.cuda.is_available():
+    print("GPU is available.")
+    gpu_available = True
+else:
+    print("GPU is not available. Switching to CPU.")
+    gpu_available = False
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
@@ -30,36 +39,61 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    model = ConvNet2D()
+    #model = ConvNet2D()
+    model = ViT()
 
-    train_images = torch.load(train_data_path)
-    train_targets = torch.load("data/processed/train_targets.pt")
+    data_images = torch.load(train_data_path)
+    data_targets = torch.load("data/processed/train_targets.pt")
 
-    train_set = torch.utils.data.TensorDataset(train_images, train_targets)
+    if gpu_available:
+        model =  model.to('cuda')
+        data_images = data_images.to('cuda')
+        data_targets = data_targets.to('cuda')
 
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=64, shuffle=True)
+<<<<<<< HEAD
+ # split data_images and data_targets into train and validation data
+=======
+    # split data_images and data_targets into train and validation data
+>>>>>>> 0c7b030bf2704db03e7d760bb87cd4b7552fac51
+    train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
 
-    criterion = torch.nn.CrossEntropyLoss()
+    data_set = torch.utils.data.TensorDataset(train_images, train_targets)
+
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
+
+    criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+
     optimizer.zero_grad()
     train_loss_epoch = []
     for epoch in range(epochs):
         running_loss = 0
-        for images, labels in train_loader:
-            # add dim for conv2d
-            images.resize_(images.shape[0], 1, 28, 28)
-            output = model.forward(images)
-
+        for images, labels in tqdm(train_loader):
+            # add dim for conv2dnet
+            #convert dtype of images to long
+            images = images.float()
+            output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+            output = output.flatten()
             loss = criterion(output, labels)
             loss.backward()
             optimizer.step()
             running_loss += loss.item()
 
-        print(f"Training loss: {running_loss/len(train_set)}")
+        print(f"Training loss: {running_loss/len(train_targets)}")
+        #print validation loss
+        model.eval()
+        output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+        output = output.flatten()
+        val_loss = criterion(output, val_targets)
+
+        val_loss /= len(val_targets)
+        print(f'Validation loss:', val_loss)
+        model.train()
+
         print(f"epoch: ", epoch + 1)
 
-        train_loss_epoch.append(running_loss / len(train_set))
-
+        train_loss_epoch.append(running_loss / len(train_targets))
+    
     for i in range(1000):
         save_path = os.path.join(rf"models/run_{i}", ckpt_name)
         fig_save_path = os.path.join(rf"reports/figures/run_{i}", ckpt_name.replace(".pth", ""))
@@ -71,7 +105,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
             break
 
-    print("done training and saved model")
+    print(f"done training and saved model to {save_path}")
 
 
 if __name__ == "__main__":
