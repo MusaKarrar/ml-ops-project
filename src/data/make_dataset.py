@@ -134,6 +134,7 @@ if __name__ == "__main__":
             transforms.ToTensor()(img)
 
 
+
             if img is not None:
                 all_type_img_train = np.append(
                     all_type_img_train, img)
