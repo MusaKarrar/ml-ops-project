@@ -3,6 +3,7 @@ from torch import nn
 from einops.layers.torch import Rearrange
 from einops import repeat
 
+
 class ConvNet2D(nn.Module):
     """ Convolutional neural network class with 2 convolutional layers and 1 fully connected layer.
     With batch normalization and maxpooling.

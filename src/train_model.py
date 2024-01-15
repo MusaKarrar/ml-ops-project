@@ -5,12 +5,22 @@ import torch
 from tqdm import tqdm
 from models.model import *
 from visualizations.visualize import *
+import logging
+import hydra
 
-if torch.cuda.is_available():
-    print("GPU is available.")
-    gpu_available = True
-else:
-    print("GPU is not available. Switching to CPU.")
+log = logging.getLogger(_name_)
+
+@hydra.main(config_path = "config", config_name = "default_config.yaml")
+def train(config):
+    """ Train the ViT on our dataset"""
+    print(f"Configuration: \n{OmegaConf.to_yaml(config)}")
+    hparams = config.model_type
+    torch.manual_seed(hparams["seed"])    
+    if torch.cuda.is_available():
+        print("GPU is available.")
+        gpu_available = True
+    else:
+        print("GPU is not available. Switching to CPU.")
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
