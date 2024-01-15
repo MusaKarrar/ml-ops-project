@@ -1,4 +1,5 @@
 import os
+os.environ["WAND_API_KEY"] = "98ca90f0ed87a1d5fe5c5d36599f0f3ce229653d"
 import argparse
 import torch
 from tqdm import tqdm
@@ -9,7 +10,7 @@ import wandb
 
 # Initialize wandb
 wandb.init(
-    project="ml-ops-project",
+    project="ml-ops-project-src",
     entity="group_25"
 )
 
