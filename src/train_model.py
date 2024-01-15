@@ -6,7 +6,10 @@ from tqdm import tqdm
 from models.model import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c7b030bf2704db03e7d760bb87cd4b7552fac51
 if torch.cuda.is_available():
     print("GPU is available.")
     gpu_available = True
@@ -36,19 +39,22 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    #model = my_awesome_model()
-    # Example usage:
+    #model = ConvNet2D()
     model = ViT()
 
-    train_images = torch.load(train_data_path)
-    train_targets = torch.load("data/processed/train_targets.pt")
+    data_images = torch.load(train_data_path)
+    data_targets = torch.load("data/processed/train_targets.pt")
 
     if gpu_available:
         model =  model.to('cuda')
-        train_images = train_images.to('cuda')
-        train_targets = train_targets.to('cuda')
+        data_images = data_images.to('cuda')
+        data_targets = data_targets.to('cuda')
 
+<<<<<<< HEAD
  # split data_images and data_targets into train and validation data
+=======
+    # split data_images and data_targets into train and validation data
+>>>>>>> 0c7b030bf2704db03e7d760bb87cd4b7552fac51
     train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)

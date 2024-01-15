@@ -20,11 +20,13 @@ class ConvNet2D(nn.Module):
         self.maxpool2 = nn.MaxPool2d(2, padding=0)  # [B, 64, 24, 24] --> [B, 64, 11, 11]
 
         self.fc3 = nn.Linear(64 * 77 * 50, 1)
+        self.fc3 = nn.Linear(64 * 77 * 50, 1)
 
         self.relu = nn.ReLU()
-        self.softmax = nn.Softmax(1)
+        #self.softmax = nn.Softmax(1) don't use activation for regression problem
         self.batchnorm1 = torch.nn.BatchNorm2d(64)
         self.batchnorm2 = torch.nn.BatchNorm2d(64)
+        self.batchnorm3 = torch.nn.BatchNorm1d(1)
         self.batchnorm3 = torch.nn.BatchNorm1d(1)
 
     def forward(self, x):
@@ -37,7 +39,7 @@ class ConvNet2D(nn.Module):
             Output tensor with shape [N,out_features]
 
         """
-        x.resize_(x.shape[0], 1, 28, 28)
+        x #.resize_(x.shape[0], 1, 28, 28)
         x = self.conv1(x)
         x = self.batchnorm1(x)
         x = self.relu(x)
@@ -48,7 +50,7 @@ class ConvNet2D(nn.Module):
         x = torch.flatten(x, start_dim=1)
         x = self.fc3(x)
         x = self.batchnorm3(x)
-        x = self.softmax(x)
+        #x = self.softmax(x)
         return x
 
 
@@ -86,7 +88,7 @@ class PatchEmbedding(nn.Module):
         b, n, _ = x.shape
         cls_tokens = repeat(self.cls_token, '1 1 d -> b 1 d', b = b)
         x = torch.cat((cls_tokens, x), dim=1)
-        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype)
+        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype) if torch.cuda.is_available() else self.pos_embedding[:, :(n + 1)]
         return x
 
 class MultiHeadAttentionBlock(nn.Module):
@@ -160,6 +162,7 @@ class TransformerBlock(nn.Module):
                 num_heads,
                ):
         super().__init__()
+        super().__init__()
 
         self.msa_block = MultiHeadAttentionBlock(d_model = d_model,
                                                  num_heads = num_heads,
@@ -173,7 +176,11 @@ class TransformerBlock(nn.Module):
     def forward(self,x):
         x = self.msa_block(x) + x
         x = self.ff_block(x) + x
+    def forward(self,x):
+        x = self.msa_block(x) + x
+        x = self.ff_block(x) + x
 
+        return x
         return x
 
 
@@ -196,16 +203,16 @@ class ViT(nn.Module):
         batch_size: int, batch size
     """
 
-    def __init__(self, img_shape = (28, 28),
-               in_channels = 1,
-               patch_shape = (14, 14),
+    def __init__(self, img_shape = (160, 106),
+               in_channels = 4,
+               patch_shape = (32, 53), #should be factor of 160 and 106
                d_model = 512,
                num_transformer_layers = 2, # from table 1 above
                dropout_rate = 0.2,
                mlp_size = 1048,
                num_heads = 4,
-               num_classes = 10,
-               batch_size = 64):
+               num_classes = 1, #regression problem, so only one output
+               batch_size = 16):
         super().__init__()
 
         self.patch_embedding_layer = PatchEmbedding(in_channels = in_channels,
