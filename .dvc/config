@@ -1,5 +1,5 @@
 [core]
     remote = remote_storage
 ['remote "remote_storage"']
-    url = gs://ml-ops-project_data_bucket/
+    url = gs://ml-ops-bucket-potato/
     version_aware = true
