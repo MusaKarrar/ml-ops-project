@@ -3,15 +3,17 @@ if __name__ == "__main__":
     import torch, os, time
     from torchvision import transforms
     import numpy as np
+
     import torchvision.transforms.functional as TF
+    from torchvision import transforms
     from PIL import Image
     number_of_bands = 4
     # Specify the path to the folder containing your image data
 
     # training1 test1
     # finaltraining finaltest
-    data_traning = r'ml-ops-project/data/raw/training5'
-    data_test = r'ml-ops-project/data/raw/test5'
+    data_traning = r'data\raw\training5'
+    data_test = r'data\raw\test5'
 
     # Create empty lists to store the data and labels
     X_train, X_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)

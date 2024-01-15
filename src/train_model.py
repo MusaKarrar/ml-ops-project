@@ -20,6 +20,7 @@ if torch.cuda.is_available():
 else:
     print("GPU is not available. Switching to CPU.")
     gpu_available = False
+    gpu_available = False
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
@@ -46,8 +47,8 @@ def train(lr, epochs, ckpt_name, train_data_path):
     print(ckpt_name)
     print(train_data_path)
 
-    model = ConvNet2D() 
-    #model = ViT()
+    #model = ConvNet2D()
+    model = ViT()
 
     # Initialize watch to log grandients / parameters
     wandb.watch(model)
@@ -59,15 +60,21 @@ def train(lr, epochs, ckpt_name, train_data_path):
         model =  model.to('cuda')
         data_images = data_images.to('cuda')
         data_targets = data_targets.to('cuda')
+        data_images = data_images.to('cuda')
+        data_targets = data_targets.to('cuda')
 
     # split data_images and data_targets into train and validation data
     train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
+    # split data_images and data_targets into train and validation data
+    train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
 
-    train_loader = torch.utils.data.DataLoader(data_set, batch_size=64, shuffle=True)
+    data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    criterion = nn.MSELoss()
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
+
+    criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
 
     optimizer.zero_grad()
@@ -79,6 +86,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
             #convert dtype of images to long
             images = images.float()
             output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+            output = output.flatten()
             output = output.flatten()
             loss = criterion(output, labels)
             wandb.log({"Training Loss": loss.item()}) # Log loss to wandb
