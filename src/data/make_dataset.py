@@ -10,8 +10,8 @@ if __name__ == "__main__":
 
     # training1 test1
     # finaltraining finaltest
-    data_traning = r'data\raw\training5'
-    data_test = r'data\raw\test5'
+    data_traning = r'ml-ops-project/data/raw/training5'
+    data_test = r'ml-ops-project/data/raw/test5'
 
     # Create empty lists to store the data and labels
     X_train, X_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)
