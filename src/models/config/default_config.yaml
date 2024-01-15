@@ -1,2 +1,2 @@
 defaults:
-  - model_type: config-ViT
+  - model_type: config_model
