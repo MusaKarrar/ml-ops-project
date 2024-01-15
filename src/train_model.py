@@ -8,7 +8,10 @@ from sklearn.model_selection import train_test_split
 import wandb
 
 # Initialize wandb
-wandb.init()
+wandb.init(
+    project="ml-ops-project",
+    entity="group_25"
+)
 
 if torch.cuda.is_available():
     print("GPU is available.")
@@ -90,7 +93,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
         val_loss = criterion(output, val_targets)
 
         val_loss /= len(val_targets) 
-        wandb.log({"Validation Loss": val_loss.item()}) # Log validation loss to wandb
+        wandb.log({"val_loss": val_loss.item()}) # Log validation loss to wandb
         print(f'Validation loss:', val_loss)
         model.train()
 
