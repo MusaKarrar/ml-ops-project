@@ -5,12 +5,14 @@ import torch
 from tqdm import tqdm
 from models.model import *
 from visualizations.visualize import *
+from sklearn.model_selection import train_test_split
 
 if torch.cuda.is_available():
     print("GPU is available.")
     gpu_available = True
 else:
     print("GPU is not available. Switching to CPU.")
+    gpu_available = False
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
@@ -46,33 +48,46 @@ def train(lr, epochs, ckpt_name, train_data_path):
         train_images = train_images.to('cuda')
         train_targets = train_targets.to('cuda')
 
-    train_set = torch.utils.data.TensorDataset(train_images, train_targets)
+ # split data_images and data_targets into train and validation data
+    train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
 
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=64, shuffle=True)
+    data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    criterion = torch.nn.CrossEntropyLoss()
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
+
+    criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+
     optimizer.zero_grad()
     train_loss_epoch = []
     for epoch in range(epochs):
         running_loss = 0
         for images, labels in tqdm(train_loader):
             # add dim for conv2dnet
-            images.resize_(images.shape[0], 1, 28, 28) 
             #convert dtype of images to long
             images = images.float()
             output = model(images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
-
+            output = output.flatten()
             loss = criterion(output, labels)
             loss.backward()
             optimizer.step()
             running_loss += loss.item()
 
-        print(f"Training loss: {running_loss/len(train_set)}")
+        print(f"Training loss: {running_loss/len(train_targets)}")
+        #print validation loss
+        model.eval()
+        output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
+        output = output.flatten()
+        val_loss = criterion(output, val_targets)
+
+        val_loss /= len(val_targets)
+        print(f'Validation loss:', val_loss)
+        model.train()
+
         print(f"epoch: ", epoch + 1)
 
-        train_loss_epoch.append(running_loss / len(train_set))
-
+        train_loss_epoch.append(running_loss / len(train_targets))
+    
     for i in range(1000):
         save_path = os.path.join(rf"models/run_{i}", ckpt_name)
         fig_save_path = os.path.join(rf"reports/figures/run_{i}", ckpt_name.replace(".pth", ""))
