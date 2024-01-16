@@ -1,7 +1,4 @@
 [core]
-    remote = storage
-['remote "storage"']
-    url = gdrive://1kY0XdGNdUlKMchLaFH3VGdFa6DbWpNgv
+    remote = remote_storage
 ['remote "remote_storage"']
     url = gs://ml-ops-project_data_bucket/
-    version_aware = true

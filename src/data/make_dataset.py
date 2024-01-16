@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     import torchvision.transforms.functional as TF
     from torchvision import transforms
-    from PIL import Image
+    from PIL import Image 
     number_of_bands = 4
     # Specify the path to the folder containing your image data
 
