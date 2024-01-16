@@ -1,5 +1,5 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build', '-t', 'gcr.io/nifty-atlas-410710/train', '-f', dockerfiles.']
+      args: ['build', '-t', 'gcr.io/nifty-atlas-410710/train', '-f', dockerfiles/train_model.dockerfile','.']
     - name: 'gcr.io/cloud-builders/docker'
       args: ['push', 'gcr.io/nifty-atlas-410710/train']
