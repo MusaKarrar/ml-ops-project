@@ -177,7 +177,7 @@ cython_debug/
 #.idea/
 
 # Ignore data
-data/
-/data
+
+./data/
 gdrive:https:/
-src/models
+./models/
