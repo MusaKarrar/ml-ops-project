@@ -1,5 +1,5 @@
 import os
-os.environ["WAND_API_KEY"] = "38c3d61662e5a11172dddf1df24561c66b8ed9cb"
+#os.environ["WAND_API_KEY"] = "45a126251197a416a091888a453d4628f32031f7"
 import argparse
 import torch
 from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler

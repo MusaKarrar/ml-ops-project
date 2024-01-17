@@ -13,5 +13,5 @@ COPY ./data/ data/
 WORKDIR /
 RUN pip install -r requirements.txt --no-cache-dir
 RUN pip install . --no-deps --no-cache-dir
-
+RUN wandb login a570414ad58306f2a605a3ec03f3396900256e59
 ENTRYPOINT ["python", "-u", "src/train_model.py"]
