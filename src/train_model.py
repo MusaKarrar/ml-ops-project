@@ -3,7 +3,7 @@ os.environ["WAND_API_KEY"] = "38c3d61662e5a11172dddf1df24561c66b8ed9cb"
 import argparse
 import torch
 from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler
-from tqdm import tqdm
+
 from models.model import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
@@ -102,7 +102,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
     with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True, on_trace_ready=tensorboard_trace_handler("./log/resnet18")) as prof:
         for epoch in range(epochs):
             running_loss = 0
-            for images, labels in tqdm(train_loader):
+            for images, labels in train_loader:
                 # add dim for conv2dnet
                 #convert dtype of images to long
                 images = images.float()
