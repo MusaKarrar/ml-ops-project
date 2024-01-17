@@ -1,0 +1,36 @@
+#Configuration file to keep track
+#of hyperparameters of the Vision
+#Transformer and CNN Models.
+
+hyperparameters_ViT:
+  img_shape: (160,106)
+  in_channels: 4
+  patch_shape: (32,53)
+  d_model: 512
+  num_transformer_layers: 2
+  dropout_rate: 0.2
+  mlp_size: 1048
+  num_heads: 4
+  num_classes: 1
+  lr: 1e-3
+  epochs: 5
+
+hyperparameters_CNN:
+  img_shape: (160,106)
+  in_channels: 4
+  out_features: 1
+  lr: 1e-3
+  epochs: 5
+  maxpool_dim: 2
+  kernel_size_layer1: 5
+  kernel_size_layer2: 3
+  conv_features_layer1: 128
+  conv_features_layer2: 128
+
+
+defaults:
+  model_type: ViT
+  ckpt_name: "ckpt_1.pth"
+  val_split: 0.05
+  batch_size: 16
+  train_data_path: data/processed/train_images.pt

@@ -8,6 +8,17 @@ from models.model import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb
+import hydra
+from omegaconf import OmegaConf
+
+@hydra.main(config_path = "config", config_name = "config_model.yaml")
+
+
+def train(config):
+    """ Train the ViT on our dataset"""
+    print(f"Configuration: \n{OmegaConf.to_yaml(config)}")
+    hparams = config.model_type
+    torch.manual_seed(hparams["seed"]) 
 
 sweep_config = {
     'name': 'sweep',
@@ -42,13 +53,8 @@ else:
     gpu_available = False
     gpu_available = False
 
-parser = argparse.ArgumentParser(description="Script for training model")
-parser.add_argument("--lr", default=1e-3, help="learning rate to use for training")
-parser.add_argument("--epochs", default=5, help="epochs to train for")
-parser.add_argument("--ckpt_name", default="ckpt_1.pth", help="Name of trained model")
-parser.add_argument("--train_data_path", default="data/processed/train_images.pt", help="Path to training data")
 
-def train(lr, epochs, ckpt_name, train_data_path):
+def train(cfg):
     """
     Train model.
     args:
@@ -58,22 +64,39 @@ def train(lr, epochs, ckpt_name, train_data_path):
     
     """
     # Log hyperparameters to wandb and set run name to checkpoint name
-    wandb.config.update({"lr": lr, "epochs": epochs})  
-    wandb.run.name = ckpt_name 
+    wandb.config.update({"lr": cfg.hyperparameters_ViT.lr if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.lr, "epochs": cfg.hyperparameters_ViT.epochs if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.epochs})  
+    wandb.run.name = cfg.defaults.ckpt_name 
 
     print("Training day and night")
-    print(lr)
-    print(epochs)
-    print(ckpt_name)
-    print(train_data_path)
+   
 
     #model = ConvNet2D()
-    model = ViT()
 
     # Initialize watch to log grandients / parameters
+    if cfg.defaults.model_type == "ViT":
+        model = ViT(cfg.hyperparameters_ViT.img_shape,
+               cfg.hyperparameters_ViT.in_channels,
+               cfg.hyperparameters_ViT.patch_shape, #should be factor of 160 and 106
+               cfg.hyperparameters_ViT.d_model,
+               cfg.hyperparameters_ViT.num_transformer_layers, # from table 1 above
+               cfg.hyperparameters_ViT.dropout_rate,
+               cfg.hyperparameters_ViT.mlp_size,
+               cfg.hyperparameters_ViT.num_heads,
+               cfg.hyperparameters_ViT.num_classes #regression problem, so only one output
+
+        )
+    else:
+        model =  ConvNet2D(eval(cfg.hyperparameters_CNN.img_shape), 
+                     cfg.hyperparameters_CNN.in_channels, 
+                     cfg.hyperparameters_CNN.conv_features_layer1, 
+                     cfg.hyperparameters_CNN.conv_features_layer2, 
+                     cfg.hyperparameters_CNN.kernel_size_layer1, 
+                     cfg.hyperparameters_CNN.kernel_size_layer2, 
+                     cfg.hyperparameters_CNN.maxpool_dim)    
+    
     wandb.watch(model)
 
-    data_images = torch.load(train_data_path)
+    data_images = torch.load(cfg.defaults.train_data_path)
     data_targets = torch.load("data/processed/train_targets.pt")
 
     if gpu_available:
@@ -84,7 +107,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
         data_targets = data_targets.to('cuda')
 
     # split data_images and data_targets into train and validation data
-    train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=0.05, random_state=0)
+    train_images, val_images, train_targets, val_targets = train_test_split(data_images, data_targets, test_size=cfg.defaults.val_split, random_state=0)
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
     # split data_images and data_targets into train and validation data
@@ -92,15 +115,15 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    train_loader = torch.utils.data.DataLoader(data_set, batch_size=16, shuffle=True)
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size= cfg.defaults.batch_size, shuffle=True)
 
     criterion = nn.L1Loss()
-    optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+    optimizer = torch.optim.SGD(model.parameters(), lr=cfg.hyperparameters_ViT.lr if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.lr)
 
     optimizer.zero_grad()
     train_loss_epoch = []
     with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True, on_trace_ready=tensorboard_trace_handler("./log/resnet18")) as prof:
-        for epoch in range(epochs):
+        for epoch in range(cfg.hyperparameters_ViT.epochs if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.epochs):
             running_loss = 0
             for images, labels in train_loader:
                 # add dim for conv2dnet
@@ -132,12 +155,12 @@ def train(lr, epochs, ckpt_name, train_data_path):
             train_loss_epoch.append(running_loss / len(train_targets))
         
     # Save model to wandb and finish wandb run
-    wandb.save(os.path.join(wandb.run.dir, ckpt_name)) 
+    wandb.save(os.path.join(wandb.run.dir, cfg.defaults.ckpt_name)) 
     wandb.finish() 
     
     for i in range(1000):
-        save_path = os.path.join(rf"models/run_{i}", ckpt_name)
-        fig_save_path = os.path.join(rf"reports/figures/run_{i}", ckpt_name.replace(".pth", ""))
+        save_path = os.path.join(rf"models/run_{i}", cfg.defaults.ckpt_name)
+        fig_save_path = os.path.join(rf"reports/figures/run_{i}", cfg.defaults.ckpt_name.replace(".pth", ""))
         if not os.path.exists(save_path):
             os.makedirs(rf"models/run_{i}")
             os.makedirs(fig_save_path)
@@ -154,11 +177,7 @@ def train(lr, epochs, ckpt_name, train_data_path):
 
 
 if __name__ == "__main__":
+    cfg = OmegaConf.load("config/config_model.yaml")
 
-    args = parser.parse_args()
-    print('args', args)
 
-    for key, value in vars(args).items():
-        globals()[key] = value
-
-    train(lr, epochs, ckpt_name, train_data_path)
+    train(cfg)
