@@ -1,6 +1,4519 @@
 outs:
-- md5: af676600082228ca1253659a580cad54.dir
-  size: 43503360
-  nfiles: 642
-  hash: md5
+- hash: md5
   path: data
+  files:
+  - relpath: .DS_Store
+    md5: d8fc01ace48d9f272e6c497426328a8f
+    size: 6148
+    cloud:
+      remote_storage:
+        etag: 08e7f290f195e283031001
+        version_id: '1705417128556903'
+  - relpath: raw/.DS_Store
+    md5: 58a0b02e24700d7e7d0358afe46672d6
+    size: 6148
+    cloud:
+      remote_storage:
+        etag: 08b2efa9f195e283031001
+        version_id: '1705417128966066'
+  - relpath: raw/test5/.DS_Store
+    md5: 6b6e78ae165311ee09cc863aef546d78
+    size: 24580
+    cloud:
+      remote_storage:
+        etag: 08f2a8cff195e283031001
+        version_id: '1705417129579634'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B10_green.tif
+    md5: cf839b3a1cd22ffde4ae63bbcfff7c7d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c0c8d8f195e283031001
+        version_id: '1705417129731136'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B10_nir.tif
+    md5: ddca22441b5663c548dd93271c56d8b2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088d8dfaf195e283031001
+        version_id: '1705417130280589'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B10_red.tif
+    md5: 15ff7a6950f05172b1e93bd8a3abe160
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0894dcc1f195e283031001
+        version_id: '1705417129356820'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B10_red_edge.tif
+    md5: 3e0a8f2bf211a8ddbd76b2baf1561734
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d297a1f295e283031001
+        version_id: '1705417130920914'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B1_green.tif
+    md5: 906ec085fe0f30f8472aa24c903b1a9e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a58996f295e283031001
+        version_id: '1705417130738853'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B1_nir.tif
+    md5: 8c604855fc70ecf7a0836a979103e476
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0881d9d6f195e283031001
+        version_id: '1705417129700481'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B1_red.tif
+    md5: b62ffe15a4299f4c276b3eee642bd824
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e38392f295e283031001
+        version_id: '1705417130672611'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B1_red_edge.tif
+    md5: acb03d0d5c35f7e32b52287c3d126d6b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f5fb94f295e283031001
+        version_id: '1705417130720757'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B2_green.tif
+    md5: ecd963dfbf881b17d8c43f5b0fdc6a05
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbbbbff195e283031001
+        version_id: '1705417129319867'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B2_nir.tif
+    md5: c7a0f07266a109536f1f1c33a2b71701
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a2d497f295e283031001
+        version_id: '1705417130764834'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B2_red.tif
+    md5: 0f8b23fc8096f89f900ec883f9fdcb8f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d6b0edf195e283031001
+        version_id: '1705417130072150'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B2_red_edge.tif
+    md5: 7edf9e4abb02c5a8a0feaf1443c8ae4e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a2aebdf195e283031001
+        version_id: '1705417129285410'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B3_green.tif
+    md5: 377a75163a9e39bf1f523d8e51f02aa4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b1e3c1f195e283031001
+        version_id: '1705417129357745'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B3_nir.tif
+    md5: 42e693c96f34cdfb59372df6bced7287
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d48eecf195e283031001
+        version_id: '1705417130051412'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B3_red.tif
+    md5: 3661b2aa56e85f2deb154b5fdac0da84
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c980e4f195e283031001
+        version_id: '1705417129918537'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B3_red_edge.tif
+    md5: 09313b27f8eb6dc6808494045df128bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08caead8f195e283031001
+        version_id: '1705417129735498'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B4_green.tif
+    md5: 68dec7ebbdc010b8f6ae81333f9332bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a0c3d9f195e283031001
+        version_id: '1705417129746848'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B4_nir.tif
+    md5: ebf6956b8417329f73ccd7fab3f55cdf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f6c0a6f295e283031001
+        version_id: '1705417131008118'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B4_red.tif
+    md5: 0dca7e0d09416cdea0f5ac3ed9918f9e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d0f3b1f295e283031001
+        version_id: '1705417131194832'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B4_red_edge.tif
+    md5: 73836094996228682ee4053a38d79b22
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899a7bbf195e283031001
+        version_id: '1705417129251737'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B5_green.tif
+    md5: 78ec2b2ff418483f64d114c05cd86c1d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0ffc0f195e283031001
+        version_id: '1705417129344992'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B5_nir.tif
+    md5: 47ab5c1dea56999ba7a80b0972feb342
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b794f5f195e283031001
+        version_id: '1705417130199607'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B5_red.tif
+    md5: 0b6bdd13570fa12c78bb64a4f3152487
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d98af8f195e283031001
+        version_id: '1705417130247513'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B5_red_edge.tif
+    md5: faa5ce861cf61fc2c4457b187ced0086
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e093f9f195e283031001
+        version_id: '1705417130265056'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B6_green.tif
+    md5: 450f9be614ec626fbd4b63fee13945f7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d8a4bcf195e283031001
+        version_id: '1705417129267800'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B6_nir.tif
+    md5: 825ad8a84906e2597b97b39169cfb120
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d8f2acf295e283031001
+        version_id: '1705417131112792'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B6_red.tif
+    md5: 820bc16ed65530428e6ab29e1a80fcde
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b6a1c2f195e283031001
+        version_id: '1705417129365686'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B6_red_edge.tif
+    md5: c12472791005e04be71dc19d7446a65e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088bd0a8f295e283031001
+        version_id: '1705417131042827'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B7_green.tif
+    md5: 65793b009f18772642e800cdb449fb37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c5dad4f195e283031001
+        version_id: '1705417129667909'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B7_nir.tif
+    md5: a5f8e8fef426d8cfbd89c90cd37dde3b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e6f9bff195e283031001
+        version_id: '1705417129327846'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B7_red.tif
+    md5: c06472e43c2e7b8e74b9a99f63facf37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dbb8faf195e283031001
+        version_id: '1705417130286171'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B7_red_edge.tif
+    md5: fe79aaf1e70f9e90f25315d0ba922818
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0884f7a9f295e283031001
+        version_id: '1705417131064196'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B8_green.tif
+    md5: d46baa5f02706bcbf8322d51746fb5fc
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebebf6f195e283031001
+        version_id: '1705417130227179'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B8_nir.tif
+    md5: 7500dac534a1d5978e3160e2c70def5b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a3fca4f295e283031001
+        version_id: '1705417130982947'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B8_red.tif
+    md5: 174cadae172b0739cab0e79d6f245682
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e185b0f295e283031001
+        version_id: '1705417131164385'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B8_red_edge.tif
+    md5: 5f77206d48be834e4f6e4af57b13d925
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b4a291f295e283031001
+        version_id: '1705417130660148'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B9_green.tif
+    md5: 4c6985faa343d8a316905a033a3108b3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3a3b0f295e283031001
+        version_id: '1705417131168195'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B9_nir.tif
+    md5: 65067457d4cc7e4e04e8030cd28cf384
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0dcd7f195e283031001
+        version_id: '1705417129717344'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B9_red.tif
+    md5: e4d90d9074b12697fe5b7838993c10ea
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c0ebf9f195e283031001
+        version_id: '1705417130276288'
+  - relpath: raw/test5/lower_right_100kg_Nitrogen_B9_red_edge.tif
+    md5: 5be6920f2ed65a4f04ac6c1a05c8d4f3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bf95bef195e283031001
+        version_id: '1705417129298623'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C10_green.tif
+    md5: dbd53dd5ed605e1014370f44d99c983c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d2b985f295e283031001
+        version_id: '1705417130466514'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C10_nir.tif
+    md5: ea9ab228572257a24b63a82df32c0071
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08889aa2f295e283031001
+        version_id: '1705417130937608'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C10_red.tif
+    md5: e397c2544f014fb5410e57ffeccda9bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a5b4adf295e283031001
+        version_id: '1705417131121189'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C10_red_edge.tif
+    md5: bd741a8e4242150ae65d6831c8a97756
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eb9ac3f195e283031001
+        version_id: '1705417129381227'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C1_green.tif
+    md5: 3654a526f5248493705d3e8d4eb924f3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089d86bef195e283031001
+        version_id: '1705417129296669'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C1_nir.tif
+    md5: a3e50ded5b47d1d2582fce0e42352c77
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089fb2f9f195e283031001
+        version_id: '1705417130268959'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C1_red.tif
+    md5: b9b9e10806ebe5dd97e899b4c0d07733
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0897ef80f295e283031001
+        version_id: '1705417130391447'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C1_red_edge.tif
+    md5: 6d1a7234cf244060cf668e3867b85697
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ae86bef195e283031001
+        version_id: '1705417129296686'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C2_green.tif
+    md5: ffa680a7d7213b68d6dd07dca2d3bce1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e5e6dbf195e283031001
+        version_id: '1705417129784165'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C2_nir.tif
+    md5: dac78d9f4f939a298871075a53290077
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089bf1baf195e283031001
+        version_id: '1705417129244827'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C2_red.tif
+    md5: 3f6991d4df195607044127ec2ce0b0f2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abeca6f295e283031001
+        version_id: '1705417131013675'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C2_red_edge.tif
+    md5: 2a9c63ea0ee419f3d5a6284fb9097f67
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ffd59bf295e283031001
+        version_id: '1705417130830591'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C3_green.tif
+    md5: 3c6557e73ab5324599946d03a637f464
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0889f4acf295e283031001
+        version_id: '1705417131112969'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C3_nir.tif
+    md5: 0f921a0b5cfe094d0cf35d7d165f5107
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08afa193f295e283031001
+        version_id: '1705417130692783'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C3_red.tif
+    md5: 2e7e5ee2d5b191eeab84cd5d10a105ea
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a897f8f195e283031001
+        version_id: '1705417130249128'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C3_red_edge.tif
+    md5: b904104f77300789bb68c9aa9f80766e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089d83d6f195e283031001
+        version_id: '1705417129689501'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C4_green.tif
+    md5: 116383c1355a73e840c1ea4adaed89f0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d1d69bf295e283031001
+        version_id: '1705417130830673'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C4_nir.tif
+    md5: 19400b51fee61feefce64c264b58898e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1d5e0f195e283031001
+        version_id: '1705417129863841'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C4_red.tif
+    md5: f5af6d49dbc69d578aaa22728427ce34
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089eb5daf195e283031001
+        version_id: '1705417129761438'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C4_red_edge.tif
+    md5: 4a24961cb02b9a0ad537ce6fa5dbb7b2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bd9cb2f295e283031001
+        version_id: '1705417131200061'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C5_green.tif
+    md5: 1af048ba492a627e093b9b06a6bb5550
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e6cff6f195e283031001
+        version_id: '1705417130223590'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C5_nir.tif
+    md5: 13dd99a93a287d8ce4da10411295424d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a98cb3f295e283031001
+        version_id: '1705417131214377'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C5_red.tif
+    md5: 4d08c4823f60bbf5e49c6b2f1cf19615
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0889c0eaf195e283031001
+        version_id: '1705417130024969'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C5_red_edge.tif
+    md5: 164a3e92427787c152a98b98c64bc0bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e3c9aef295e283031001
+        version_id: '1705417131140323'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C6_green.tif
+    md5: b94381d8c9da69fea4f8e13e8050bf93
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cab2d5f195e283031001
+        version_id: '1705417129679178'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C6_nir.tif
+    md5: 051ef5bbc935e73d34cf6979114e5b04
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aafcbff195e283031001
+        version_id: '1705417129328170'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C6_red.tif
+    md5: c4c0355c58e4135439a38e2d21282be2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08efe1ddf195e283031001
+        version_id: '1705417129816303'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C6_red_edge.tif
+    md5: 776e1eb5dfb3407f862e02590da7001f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dac2d6f195e283031001
+        version_id: '1705417129697626'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C7_green.tif
+    md5: 0c225133c984dc9eb1d17ebf3b95b0fa
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c5a0fdf195e283031001
+        version_id: '1705417130332229'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C7_nir.tif
+    md5: b7d5f738764a467b2e09e0194ee74244
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0884e197f295e283031001
+        version_id: '1705417130766468'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C7_red.tif
+    md5: 371695f2cf29376ad1ba785e666e99ab
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0896c299f295e283031001
+        version_id: '1705417130795286'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C7_red_edge.tif
+    md5: 8ee799480f026e74bff56ff7d543f547
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ad808df295e283031001
+        version_id: '1705417130590253'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C8_green.tif
+    md5: ea645905de135e7d7de7dd15ddda7a81
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898a3a2f295e283031001
+        version_id: '1705417130938776'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C8_nir.tif
+    md5: 5e93a03cf1407b7b954a68543f15ebb7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08afdfbef195e283031001
+        version_id: '1705417129308079'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C8_red.tif
+    md5: fd08b7ba55f4a5fda861c10289fed743
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a9eefcf195e283031001
+        version_id: '1705417130325801'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C8_red_edge.tif
+    md5: 7f704bdd310d945e055e2a9d1e4a178b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a88bfff195e283031001
+        version_id: '1705417130362280'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C9_green.tif
+    md5: 98127b6bd72b4645e49186b491995464
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088c89bef195e283031001
+        version_id: '1705417129297036'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C9_nir.tif
+    md5: 52be0f7e09f443a68b4e1806e2a1586c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08829a90f295e283031001
+        version_id: '1705417130642690'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C9_red.tif
+    md5: 6b5e490668bd89073a5b6a82000b4c23
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f2f592f295e283031001
+        version_id: '1705417130687218'
+  - relpath: raw/test5/lower_right_200kg_Nitrogen_C9_red_edge.tif
+    md5: 986257133530bb2ff4a00d8e0f8c3941
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbc98df295e283031001
+        version_id: '1705417130599611'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D10_green.tif
+    md5: 17b8a9aa6963c26dff64e876e34484bd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d193b2f295e283031001
+        version_id: '1705417131198929'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D10_nir.tif
+    md5: ad09f8585713387e219f977fbb41d8b5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898bfbff195e283031001
+        version_id: '1705417129320344'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D10_red.tif
+    md5: d03bbb1c63437a95c9fa7e1f86e1abc2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ddb996f295e283031001
+        version_id: '1705417130745053'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D10_red_edge.tif
+    md5: 0fb219fb70866dea2e5816f85eaa410d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f1ddc1f195e283031001
+        version_id: '1705417129357041'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D1_green.tif
+    md5: 31a21c83a1366be3d07e1d0cd2ee44fb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bc89d8f195e283031001
+        version_id: '1705417129723068'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D1_nir.tif
+    md5: 3c9c123d932637f267932234c5994075
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5abfcf195e283031001
+        version_id: '1705417130317237'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D1_red.tif
+    md5: 10113fd73da9a4b17f8d84c380360237
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bafbc0f195e283031001
+        version_id: '1705417129344442'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D1_red_edge.tif
+    md5: 698345527d355422b8c669a556d4f660
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c6b0fcf195e283031001
+        version_id: '1705417130317894'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D2_green.tif
+    md5: 64056131ca6c4a50883c192efd920e34
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08acc8d7f195e283031001
+        version_id: '1705417129714732'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D2_nir.tif
+    md5: b8eb29426a4c31de36baadb53ea5cb0e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f7e9bdf195e283031001
+        version_id: '1705417129293047'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D2_red.tif
+    md5: 11669f0446096eca14531c80247bfb6d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fca7aaf295e283031001
+        version_id: '1705417131070460'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D2_red_edge.tif
+    md5: d80820d89723e99b5f5ee6764bf39cab
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088dbba2f295e283031001
+        version_id: '1705417130941837'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D3_green.tif
+    md5: c16c0d62b123be34eab137fbf59269e1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0884fed6f195e283031001
+        version_id: '1705417129705220'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D3_nir.tif
+    md5: 8de73fed070259b224e316eb4d86fd5b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b3d4bcf195e283031001
+        version_id: '1705417129273907'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D3_red.tif
+    md5: 2dfc8c0136f28d439d5878d39d91176b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b9d3bff195e283031001
+        version_id: '1705417129322937'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D3_red_edge.tif
+    md5: 5f7edeec05175550dedd3209e42bae4a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ee90bdf195e283031001
+        version_id: '1705417129281646'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D4_green.tif
+    md5: 683de26f0752d37c556684d503d37500
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ace4eef195e283031001
+        version_id: '1705417130095148'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D4_nir.tif
+    md5: 887d5ec533b22594be1f59f744647f8d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e2b1e6f195e283031001
+        version_id: '1705417129957602'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D4_red.tif
+    md5: 3c33f3e569120ae49ae51a624cbe0ae3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5a3def195e283031001
+        version_id: '1705417129824693'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D4_red_edge.tif
+    md5: a7d5cc85f77c62c830cc933310c229b0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0889bfabf295e283031001
+        version_id: '1705417131089801'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D5_green.tif
+    md5: 648d2fe045e20c6ddea374b2936fda15
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0a6fdf195e283031001
+        version_id: '1705417130333024'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D5_nir.tif
+    md5: 91f0234b9ebbd60e49af996a13bc866d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088efc92f295e283031001
+        version_id: '1705417130688014'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D5_red.tif
+    md5: 5f00b9267efb103a094b11923e731092
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bf9c8cf295e283031001
+        version_id: '1705417130577471'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D5_red_edge.tif
+    md5: d4d698bd2292f20e9346da6a891535a6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d5ee9ef295e283031001
+        version_id: '1705417130882901'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D6_green.tif
+    md5: 783c4bc8d297f4f18bd7852e3ab40a6e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08899ddbf195e283031001
+        version_id: '1705417129774729'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D6_nir.tif
+    md5: 35ff75a98fdf28ebe4896b0ef5388cca
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a488d5f195e283031001
+        version_id: '1705417129673764'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D6_red.tif
+    md5: 2bc68e584c064d82f6599d177842b1a7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089ac2bff195e283031001
+        version_id: '1705417129320730'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D6_red_edge.tif
+    md5: 49fc7477b4a414c79ad1e3173506bfd0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a8af91f295e283031001
+        version_id: '1705417130661800'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D7_green.tif
+    md5: 624af0dfe0028d27956a226817fab12f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fe9385f295e283031001
+        version_id: '1705417130461694'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D7_nir.tif
+    md5: 637106bddf20db9deec823ef7b2d14c5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e38f93f295e283031001
+        version_id: '1705417130690531'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D7_red.tif
+    md5: 5ce3a21d9598adc2c8b2ef8d8bf72255
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a39fa8f295e283031001
+        version_id: '1705417131036579'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D7_red_edge.tif
+    md5: b4a8145d9f924fd06ee6d7a3105bc0ab
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898d39df295e283031001
+        version_id: '1705417130863000'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D8_green.tif
+    md5: 429864bc39da704801a4e368c40dce37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b4edacf295e283031001
+        version_id: '1705417131112116'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D8_nir.tif
+    md5: 776cc205496ade1e34fd0ba10d5c6b40
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a6e396f295e283031001
+        version_id: '1705417130750374'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D8_red.tif
+    md5: c5307a18689c12b1e6dc1fde4a204b0e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899d8fbf195e283031001
+        version_id: '1705417130306585'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D8_red_edge.tif
+    md5: f7d41ebef893e2d79fc273361cbf0e93
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899d7bef195e283031001
+        version_id: '1705417129307033'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D9_green.tif
+    md5: aee2d1e86f649970d788e144d857bfd1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dcf6aef295e283031001
+        version_id: '1705417131146076'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D9_nir.tif
+    md5: feb2607af8aca11de559c776df5b042d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2bd8cf295e283031001
+        version_id: '1705417130581682'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D9_red.tif
+    md5: 54c7ccc580e39416497dc8d80b522b61
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893a7daf195e283031001
+        version_id: '1705417129759635'
+  - relpath: raw/test5/lower_right_300kg_Nitrogen_D9_red_edge.tif
+    md5: 084d8a2641a99ce647b2d72b0c270767
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b4a7e6f195e283031001
+        version_id: '1705417129956276'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A10_green.tif
+    md5: 531d905192944cb4ddcfc8678a82f46c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9c3d9f195e283031001
+        version_id: '1705417129746937'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A10_nir.tif
+    md5: 13668c47ac5ba43e5d110fe7e4413d65
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0889d198f295e283031001
+        version_id: '1705417130780809'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A10_red.tif
+    md5: d1c1c587157ed529b923e95fdd96f4b2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cfebc0f195e283031001
+        version_id: '1705417129342415'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A10_red_edge.tif
+    md5: 77e95a8c8aef44fb717b542c304ab53c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899c6f6f195e283031001
+        version_id: '1705417130222361'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A1_green.tif
+    md5: 1bed265306fd50a602a465cb9ebe0545
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1c1fff195e283031001
+        version_id: '1705417130369185'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A1_nir.tif
+    md5: 2a2aa86c3db53d623f30b789e54d66f0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e69be0f195e283031001
+        version_id: '1705417129856486'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A1_red.tif
+    md5: dbbc042b2c0ab066d1134b7d42b4a37d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ec8294f295e283031001
+        version_id: '1705417130705260'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A1_red_edge.tif
+    md5: f04b6d5aa49593d9718ad556f020ecad
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08decf94f295e283031001
+        version_id: '1705417130715102'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A2_green.tif
+    md5: 5d4617d0a5ed52f5d65c9db499365ac6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088293f8f195e283031001
+        version_id: '1705417130248578'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A2_nir.tif
+    md5: 954e5e7287fb4782f7c9a72c12ef6284
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a797daf195e283031001
+        version_id: '1705417129757607'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A2_red.tif
+    md5: f242ef3c0d56291bd9fae3c3f4d4d41d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b1d38cf295e283031001
+        version_id: '1705417130584497'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A2_red_edge.tif
+    md5: 9bce9ed181f702be370d0ae1a1babb97
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dbbcfbf195e283031001
+        version_id: '1705417130303067'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A3_green.tif
+    md5: 648534670d1160de3520fd12fe43723b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fee1fbf195e283031001
+        version_id: '1705417130307838'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A3_nir.tif
+    md5: 9e56025628b4bf2cfb40db8f661c339b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08db90b4f295e283031001
+        version_id: '1705417131231323'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A3_red.tif
+    md5: 0a43af7204f933956adfea6e2dfd663f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c8d9e0f195e283031001
+        version_id: '1705417129864392'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A3_red_edge.tif
+    md5: 69f4bb266e02eb7a407208de445ba672
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f6a9bff195e283031001
+        version_id: '1705417129317622'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A4_green.tif
+    md5: e6b878544674300576aba5f26a5d7bbe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e59da2f295e283031001
+        version_id: '1705417130938085'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A4_nir.tif
+    md5: bdf5e81f12292bd5b8e0fa3e66e4f2c6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08edd2def195e283031001
+        version_id: '1705417129830765'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A4_red.tif
+    md5: 3f972ebb45dbac670eb11e88a7886f71
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a6ba88f295e283031001
+        version_id: '1705417130515750'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A4_red_edge.tif
+    md5: 30073fc1805bfc8d7086d64b0a6124b0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089de8bef195e283031001
+        version_id: '1705417129309213'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A5_green.tif
+    md5: 292af7182f4cdd94188a45c6d6744b80
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a3abdaf195e283031001
+        version_id: '1705417129760163'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A5_nir.tif
+    md5: 95a17c64ae16b80147baee2c87d182bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898b1f7f195e283031001
+        version_id: '1705417130236056'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A5_red.tif
+    md5: 4c793fc3b419a02e50e963ab611280f7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ebe88f295e283031001
+        version_id: '1705417130516238'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A5_red_edge.tif
+    md5: c10090c2d398a4918c33fb07006183ec
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aed9def195e283031001
+        version_id: '1705417129831598'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A6_green.tif
+    md5: 0080258ffd524a07b53ff6e2f74a3479
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dbff8ff295e283031001
+        version_id: '1705417130639323'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A6_nir.tif
+    md5: 695167a459e4a8be4c244d21b6c581d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d9e6a5f295e283031001
+        version_id: '1705417130996569'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A6_red.tif
+    md5: 1a009e9f90db71a3387ca988e6aabd09
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0885eba3f295e283031001
+        version_id: '1705417130964357'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A6_red_edge.tif
+    md5: e33421a8da1399ecbd75374416951fb3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bde3fdf195e283031001
+        version_id: '1705417130340797'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A7_green.tif
+    md5: df5e2a320319e767efb2cdcf18930f3e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1dcf6f195e283031001
+        version_id: '1705417130225185'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A7_nir.tif
+    md5: a62a05fc90a01375f416cec1dacd3946
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0880bbdaf195e283031001
+        version_id: '1705417129762176'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A7_red.tif
+    md5: f246ff3daef1c094dd4eec65a5e6c038
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088be28ef295e283031001
+        version_id: '1705417130619147'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A7_red_edge.tif
+    md5: 079ed5795411e4d0569c6b93948f318a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b3acd1f195e283031001
+        version_id: '1705417129612851'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A8_green.tif
+    md5: fce89b0cc3fa5e5abff98091164fd3b4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3cd94f295e283031001
+        version_id: '1705417130714819'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A8_nir.tif
+    md5: 5dbd27b9aec6bc7ecbacd63eebc8d816
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cf82dbf195e283031001
+        version_id: '1705417129771343'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A8_red.tif
+    md5: aca2fbac22de51dc54caeb83d8185b4d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aae5c1f195e283031001
+        version_id: '1705417129357994'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A8_red_edge.tif
+    md5: cfe45f27db18641d6dcf553ebd5e909e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886cffdf195e283031001
+        version_id: '1705417130338182'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A9_green.tif
+    md5: bb880b753991af192f6409c0b4a089e5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cb86fef195e283031001
+        version_id: '1705417130345291'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A9_nir.tif
+    md5: 88549b3236297d22009cb9065f76a729
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bd98bff195e283031001
+        version_id: '1705417129315389'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A9_red.tif
+    md5: b508a95277c1a215c48f593ecd051580
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893b495f295e283031001
+        version_id: '1705417130727955'
+  - relpath: raw/test5/lower_right_zerokg_Nitrogen_A9_red_edge.tif
+    md5: 01396a533eddb7f732aefa1e255c8b24
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e383c2f195e283031001
+        version_id: '1705417129361891'
+  - relpath: raw/test5/test.zip
+    md5: e62c7ff8a51ea5d94c05399e8a51846c
+    size: 9117078
+    cloud:
+      remote_storage:
+        etag: 08e088ecf295e283031001
+        version_id: '1705417132147808'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B10_green.tif
+    md5: 153d9a238d6680ca842cf060debd210f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f8b4e0f295e283031001
+        version_id: '1705417131956856'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B10_nir.tif
+    md5: 48719408bd2d1469915973a6d80ba5af
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ad4d3f495e283031001
+        version_id: '1705417135942154'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B10_red.tif
+    md5: f3623b74a9c82e251b939bfc093ffdca
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08beb2bdf395e283031001
+        version_id: '1705417133480254'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B10_red_edge.tif
+    md5: d06eaa6b895c7a2a2c5038ddb3ddf67a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fba0a0f595e283031001
+        version_id: '1705417137197179'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B1_green.tif
+    md5: b1f3aa683a186a0e0d3887cf24df42a6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e780b6f495e283031001
+        version_id: '1705417135456359'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B1_nir.tif
+    md5: 99ac33df243e99d6642ef0c3616017c0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dde6f3f395e283031001
+        version_id: '1705417134371677'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B1_red.tif
+    md5: 3cb7462b0983db0492f1ed81dd291fc7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ad9c4f395e283031001
+        version_id: '1705417133599882'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B1_red_edge.tif
+    md5: 041f3b227e4f51c255f4e1873646a68c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a2c5b5f395e283031001
+        version_id: '1705417133351586'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B2_green.tif
+    md5: aaf84053e9c92a96b23aa747bf025336
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0888e2f2f295e283031001
+        version_id: '1705417132257544'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B2_nir.tif
+    md5: 3f0296acb9f72cf56c608653164384e0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d484e3f295e283031001
+        version_id: '1705417131999828'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B2_red.tif
+    md5: 10541f461f6c55a21d5a2f9bc9a21a51
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d3fe98f595e283031001
+        version_id: '1705417137078099'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B2_red_edge.tif
+    md5: 2a0dec510ef19b4b489d4a247731fff8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cc85b4f495e283031001
+        version_id: '1705417135424204'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B3_green.tif
+    md5: 9ccc9878c2406e46f890fb4a04157a99
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ced8ddf495e283031001
+        version_id: '1705417136106574'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B3_nir.tif
+    md5: 09004a7b3c14adeb4aec89f794fc6c9a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08db9daff395e283031001
+        version_id: '1705417133248219'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B3_red.tif
+    md5: b21c74664e35c25a697f672a5737e001
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0883af80f495e283031001
+        version_id: '1705417134577539'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B3_red_edge.tif
+    md5: 928735896fe8eb9a4efe20a28cdb34d6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aa86d5f495e283031001
+        version_id: '1705417135964970'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B4_green.tif
+    md5: 68dec7ebbdc010b8f6ae81333f9332bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eceeccf395e283031001
+        version_id: '1705417133733740'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B4_nir.tif
+    md5: ebf6956b8417329f73ccd7fab3f55cdf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dbe9e0f295e283031001
+        version_id: '1705417131963611'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B4_red.tif
+    md5: 0dca7e0d09416cdea0f5ac3ed9918f9e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbf8b9f395e283031001
+        version_id: '1705417133423675'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B4_red_edge.tif
+    md5: 73836094996228682ee4053a38d79b22
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebdaeff395e283031001
+        version_id: '1705417134304619'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B5_green.tif
+    md5: 78ec2b2ff418483f64d114c05cd86c1d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089be7e8f295e283031001
+        version_id: '1705417132094363'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B5_nir.tif
+    md5: 47ab5c1dea56999ba7a80b0972feb342
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1b2d4f495e283031001
+        version_id: '1705417135954209'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B5_red.tif
+    md5: 0b6bdd13570fa12c78bb64a4f3152487
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bdf0b4f395e283031001
+        version_id: '1705417133340733'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B5_red_edge.tif
+    md5: faa5ce861cf61fc2c4457b187ced0086
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b9c0b5f395e283031001
+        version_id: '1705417133350969'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B6_green.tif
+    md5: 09bce52eb899aa2885f3d41bb7d7dae1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886b3e6f395e283031001
+        version_id: '1705417134152070'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B6_nir.tif
+    md5: cee7e79396c793b17f49b6e571d482bd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbe1a7f395e283031001
+        version_id: '1705417133125819'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B6_red.tif
+    md5: 046f092da4d458eee79e4739a64f3201
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0897f586f395e283031001
+        version_id: '1705417132587671'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B6_red_edge.tif
+    md5: 7bfd6930365dc78c01d7253ba02eb94f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cfe699f395e283031001
+        version_id: '1705417132897103'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B7_green.tif
+    md5: d386c0d6179f18308a7c3c9ff43d233f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0881bc8bf595e283031001
+        version_id: '1705417136856577'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B7_nir.tif
+    md5: 3cb67c9c90f39274f9a8f56e92f69d6f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fcecfef495e283031001
+        version_id: '1705417136649852'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B7_red.tif
+    md5: 5cae2b20c298d6001ceec3fe4f67f378
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08858e9af495e283031001
+        version_id: '1705417134999301'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B7_red_edge.tif
+    md5: 56899a2603b159d8f5b501c9221b162a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088999c8f395e283031001
+        version_id: '1705417133657225'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B8_green.tif
+    md5: d9ea53d70814cada6a11b115197ebec6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eaaebdf495e283031001
+        version_id: '1705417135576938'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B8_nir.tif
+    md5: 3df586f3e920cc6ada7f3de6066983bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b7fb89f495e283031001
+        version_id: '1705417134734775'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B8_red.tif
+    md5: 8c044f4d7de6476ff180e36c30c4f57d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f98594f595e283031001
+        version_id: '1705417136997113'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B8_red_edge.tif
+    md5: dcefd23183fee5de66a0915cd0401dd7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b7f7a1f595e283031001
+        version_id: '1705417137224631'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B9_green.tif
+    md5: 6bed01e7876b5b3ae37d478963f57135
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a194fcf395e283031001
+        version_id: '1705417134508577'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B9_nir.tif
+    md5: 1d7daf86332f74ddd9ce4ee0df4431ab
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c4f1b7f395e283031001
+        version_id: '1705417133390020'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B9_red.tif
+    md5: 91bec6550ec25bdf619e677078f14e90
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bda6adf395e283031001
+        version_id: '1705417133216573'
+  - relpath: raw/training5/lower_left_100kg_Nitrogen_B9_red_edge.tif
+    md5: ee4743aecaff169a278690c98fc5944d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dae2c6f395e283031001
+        version_id: '1705417133633882'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C10_green.tif
+    md5: dbd53dd5ed605e1014370f44d99c983c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ee8ec7f495e283031001
+        version_id: '1705417135736686'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C10_nir.tif
+    md5: ea9ab228572257a24b63a82df32c0071
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a6f7cbf295e283031001
+        version_id: '1705417131621286'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C10_red.tif
+    md5: e397c2544f014fb5410e57ffeccda9bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a7f5ccf395e283031001
+        version_id: '1705417133734567'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C10_red_edge.tif
+    md5: bd741a8e4242150ae65d6831c8a97756
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a084d0f295e283031001
+        version_id: '1705417131688480'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C1_green.tif
+    md5: 304999ae406d24debbe932398ca4162b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2d2eef395e283031001
+        version_id: '1705417134287154'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C1_nir.tif
+    md5: e3f3ff27094fd08c0574865fa1df1875
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b8c4f1f495e283031001
+        version_id: '1705417136431672'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C1_red.tif
+    md5: c338ad1f9f59b10a332ce55d44cd087a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fab28cf395e283031001
+        version_id: '1705417132677498'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C1_red_edge.tif
+    md5: 03e7974ed5e4618af60b580809935d1e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfaccef495e283031001
+        version_id: '1705417135855167'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C2_green.tif
+    md5: 1f172f2d75642357e180438377955f36
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e69682f395e283031001
+        version_id: '1705417132510054'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C2_nir.tif
+    md5: d35452a34ea18e030ea674aa37822ec8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a2a495f495e283031001
+        version_id: '1705417134920226'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C2_red.tif
+    md5: d4c8476609d044871eb88e41173d5981
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088fcc9df395e283031001
+        version_id: '1705417132959247'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C2_red_edge.tif
+    md5: 4fe6a38e7f4025eaf62934eacb3c4b6a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c2fee9f395e283031001
+        version_id: '1705417134210882'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C3_green.tif
+    md5: 0f4c40101dd582ac044ad14e81bae758
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fea2d1f395e283031001
+        version_id: '1705417133805950'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C3_nir.tif
+    md5: d5186c79836b062a9e1bc8e29d9322a0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08adec89f395e283031001
+        version_id: '1705417132635693'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C3_red.tif
+    md5: dcf21d8f42be22f3f1cecbb9846024d5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08db8baaf395e283031001
+        version_id: '1705417133163995'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C3_red_edge.tif
+    md5: 5367a722a2ccbf0091add8fa657f23d4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aa8a9bf395e283031001
+        version_id: '1705417132918058'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C4_green.tif
+    md5: 6570a749b9217b168ed3548dbf4d6fc6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abc4e2f495e283031001
+        version_id: '1705417136185899'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C4_nir.tif
+    md5: 556027fa62096ea40d7104e9777ad811
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebe9c7f295e283031001
+        version_id: '1705417131554027'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C4_red.tif
+    md5: f677cce6a7a4e2dbea55759138cfe7e9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b7e6d6f395e283031001
+        version_id: '1705417133896503'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C4_red_edge.tif
+    md5: 7e7b87ec6c7b34cab0d0e80c1e7c6f9b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b6ba8af595e283031001
+        version_id: '1705417136839990'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C5_green.tif
+    md5: 61fcb9bd5e4a73d64d5d4dbb9f39c75e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886e6c9f295e283031001
+        version_id: '1705417131586310'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C5_nir.tif
+    md5: 42fd7796ca34c8a285baff6ce1fb95b1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089787d9f395e283031001
+        version_id: '1705417133933463'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C5_red.tif
+    md5: a0485fa7c904d0ae66082d0ed14378f0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5f8c7f395e283031001
+        version_id: '1705417133653045'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C5_red_edge.tif
+    md5: 484e0d9ab83898f8194ae87f90d94312
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ee9983f595e283031001
+        version_id: '1705417136721134'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C6_green.tif
+    md5: 8dac14dc6a8dc531513d75c6cc046bf5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b1a392f395e283031001
+        version_id: '1705417132773809'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C6_nir.tif
+    md5: eed23f7e58cf45b907fbc08dc88be9fc
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0887e7f9f495e283031001
+        version_id: '1705417136567175'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C6_red.tif
+    md5: c415ef11c2c44a937ba26be7aa8859bc
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08afd2bdf495e283031001
+        version_id: '1705417135581487'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C6_red_edge.tif
+    md5: 5abc34d31a0357652adbc6dccb0f898b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f6b5dff295e283031001
+        version_id: '1705417131940598'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C7_green.tif
+    md5: 4a7ea49b1db5c277d7994e251e496eee
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ecce87f395e283031001
+        version_id: '1705417132599148'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C7_nir.tif
+    md5: 29600ac680c7d02a55a27fedb569a040
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d5ec90f395e283031001
+        version_id: '1705417132750421'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C7_red.tif
+    md5: dfd7e3f49015e866ec8c2d7846a9d95d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ce8cd1f495e283031001
+        version_id: '1705417135900238'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C7_red_edge.tif
+    md5: e9c5d5c221a292014221c31c3397f3f9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cce8e8f495e283031001
+        version_id: '1705417136288844'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C8_green.tif
+    md5: 33e435b97621c3e3525e61749c0b0427
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d8ffc8f295e283031001
+        version_id: '1705417131573208'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C8_nir.tif
+    md5: cdeaf4112296e384a84e57943682df7c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e286e3f495e283031001
+        version_id: '1705417136194402'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C8_red.tif
+    md5: a7bc952c4316c7582774f3e9a140609b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f7edc5f495e283031001
+        version_id: '1705417135716087'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C8_red_edge.tif
+    md5: 148622f201533e5e07922d80f5e869b4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088387d0f495e283031001
+        version_id: '1705417135883139'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C9_green.tif
+    md5: 9347e4f69cfee31ec8b0c1bb8490e016
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ea4c2f495e283031001
+        version_id: '1705417135657486'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C9_nir.tif
+    md5: 2c453f7a45279d988eb345fff5191ed6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ffc7d6f295e283031001
+        version_id: '1705417131795455'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C9_red.tif
+    md5: e73ee77c970ea3b054a913364d0b7130
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfdcaef395e283031001
+        version_id: '1705417133239871'
+  - relpath: raw/training5/lower_left_200kg_Nitrogen_C9_red_edge.tif
+    md5: 2a82c1907532b8d7b9ca58d17b8b1c5f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ac99a5f595e283031001
+        version_id: '1705417137278124'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D10_green.tif
+    md5: d35f9f6e623180775e439dd166ba688e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eab1e2f295e283031001
+        version_id: '1705417131989226'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D10_nir.tif
+    md5: c4a82db160e4116e61c8482b475cab02
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08becfd8f395e283031001
+        version_id: '1705417133926334'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D10_red.tif
+    md5: 33ffa88fd9fd8227d5826077ef72e59a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e2dfc4f495e283031001
+        version_id: '1705417135697890'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D10_red_edge.tif
+    md5: b600bce1856cb85338c1bd0949e70029
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aa8288f495e283031001
+        version_id: '1705417134702890'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D1_green.tif
+    md5: bdbbcca1ab5c734f988a90a741989478
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0888e9f0f495e283031001
+        version_id: '1705417136419976'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D1_nir.tif
+    md5: 48b07a070aa99b684013223dbcb22501
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2979ff495e283031001
+        version_id: '1705417135082418'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D1_red.tif
+    md5: a7e75bbf5f6312b96c54bfb41ba36e9f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088195a3f395e283031001
+        version_id: '1705417133050497'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D1_red_edge.tif
+    md5: ccd173b75ada0a15e7e86b4dc0c89447
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbd881f595e283031001
+        version_id: '1705417136696379'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D2_green.tif
+    md5: ece743323304c38ec0dac01e3908f9ef
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eda0edf295e283031001
+        version_id: '1705417132167277'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D2_nir.tif
+    md5: af80cd83c3ed744f5106055f744c3691
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089cdbe2f395e283031001
+        version_id: '1705417134091676'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D2_red.tif
+    md5: 647c97064ce3dc03b2c1c4bb0843110d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d3b993f495e283031001
+        version_id: '1705417134890195'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D2_red_edge.tif
+    md5: 4f228c197694c416cf34dd299348884a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d9c59ef595e283031001
+        version_id: '1705417137169113'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D3_green.tif
+    md5: a0b0dcb1789b077638290e5a5517f2bc
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dfadc7f295e283031001
+        version_id: '1705417131546335'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D3_nir.tif
+    md5: a3acd52998dc93b2f6a6efcba118deab
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dae6e7f495e283031001
+        version_id: '1705417136272218'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D3_red.tif
+    md5: 4b0aeefeb96782d92e3ca710e345d4dd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b0ffeef295e283031001
+        version_id: '1705417132195760'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D3_red_edge.tif
+    md5: 0d2c311d81a2917d37abd19057ead61f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b3de9df595e283031001
+        version_id: '1705417137155891'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D4_green.tif
+    md5: 01d16d7372a135fc9ad6953f94db8ee5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c0a9c2f495e283031001
+        version_id: '1705417135658176'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D4_nir.tif
+    md5: 907f273be364a59c4642952864b8888d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d5c691f495e283031001
+        version_id: '1705417134859093'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D4_red.tif
+    md5: 85280f6b6d50d844190ea573b57c43a3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898aac4f395e283031001
+        version_id: '1705417133593880'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D4_red_edge.tif
+    md5: 9b87eaa663e51bf1e8a8722f3e0dc5c5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088e81ebf395e283031001
+        version_id: '1705417134227598'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D5_green.tif
+    md5: 648d2fe045e20c6ddea374b2936fda15
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089ffdc8f295e283031001
+        version_id: '1705417131572895'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D5_nir.tif
+    md5: 91f0234b9ebbd60e49af996a13bc866d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a7f084f495e283031001
+        version_id: '1705417134651431'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D5_red.tif
+    md5: 5f00b9267efb103a094b11923e731092
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d5c8c1f495e283031001
+        version_id: '1705417135645781'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D5_red_edge.tif
+    md5: d4d698bd2292f20e9346da6a891535a6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c683f0f295e283031001
+        version_id: '1705417132212678'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D6_green.tif
+    md5: 783c4bc8d297f4f18bd7852e3ab40a6e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abacb4f395e283031001
+        version_id: '1705417133332011'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D6_nir.tif
+    md5: 35ff75a98fdf28ebe4896b0ef5388cca
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088fb3dff295e283031001
+        version_id: '1705417131940239'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D6_red.tif
+    md5: 2bc68e584c064d82f6599d177842b1a7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d1fda2f495e283031001
+        version_id: '1705417135144657'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D6_red_edge.tif
+    md5: 49fc7477b4a414c79ad1e3173506bfd0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fabe9bf395e283031001
+        version_id: '1705417132924794'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D7_green.tif
+    md5: b8e21aaa81fc20b64524f79ce14e432c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b6c381f495e283031001
+        version_id: '1705417134596534'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D7_nir.tif
+    md5: f57b4cfa9abeae3e686afb9302ad40e1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fbbbb0f495e283031001
+        version_id: '1705417135365627'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D7_red.tif
+    md5: ab434d1fd03c42374daf6f72ae9240d7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0894cd86f595e283031001
+        version_id: '1705417136776852'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D7_red_edge.tif
+    md5: 47d55c063f3a94fad99f893b8f1e39fe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dae5d8f395e283031001
+        version_id: '1705417133929178'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D8_green.tif
+    md5: 429864bc39da704801a4e368c40dce37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088986baf295e283031001
+        version_id: '1705417131328265'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D8_nir.tif
+    md5: 776cc205496ade1e34fd0ba10d5c6b40
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a5b19df495e283031001
+        version_id: '1705417135052965'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D8_red.tif
+    md5: c5307a18689c12b1e6dc1fde4a204b0e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfb6cef295e283031001
+        version_id: '1705417131662143'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D8_red_edge.tif
+    md5: f7d41ebef893e2d79fc273361cbf0e93
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbe5b8f295e283031001
+        version_id: '1705417131307707'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D9_green.tif
+    md5: aee2d1e86f649970d788e144d857bfd1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bface7f395e283031001
+        version_id: '1705417134167615'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D9_nir.tif
+    md5: feb2607af8aca11de559c776df5b042d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088d98fdf495e283031001
+        version_id: '1705417136622605'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D9_red.tif
+    md5: 54c7ccc580e39416497dc8d80b522b61
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ff8ea5f395e283031001
+        version_id: '1705417133082495'
+  - relpath: raw/training5/lower_left_300kg_Nitrogen_D9_red_edge.tif
+    md5: 084d8a2641a99ce647b2d72b0c270767
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0883b28ff395e283031001
+        version_id: '1705417132726531'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A10_green.tif
+    md5: 95f245854bb003aaf7c0473364097975
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088393c6f495e283031001
+        version_id: '1705417135720835'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A10_nir.tif
+    md5: 381fc9e3b234397b8de2f15166b62b25
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ecbefbf495e283031001
+        version_id: '1705417136594796'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A10_red.tif
+    md5: 529477ed3d3cdd485c624f0430f21110
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e8a7adf495e283031001
+        version_id: '1705417135313896'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A10_red_edge.tif
+    md5: bc7beb92110f9aa51f90ac026cccd204
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d985f4f295e283031001
+        version_id: '1705417132278489'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A1_green.tif
+    md5: c79fd689b332676e94a2278ddac88a3e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b0a3b5f295e283031001
+        version_id: '1705417131250096'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A1_nir.tif
+    md5: 80ad750b4d3dfe38497a2b6f73f81d7d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d196d2f495e283031001
+        version_id: '1705417135917905'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A1_red.tif
+    md5: 9e316033f434eaa0c8f653457966beb6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fccc86f395e283031001
+        version_id: '1705417132582524'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A1_red_edge.tif
+    md5: 96b7dfada07dc8ae6dd3f008171cc197
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c4fa95f595e283031001
+        version_id: '1705417137028420'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A2_green.tif
+    md5: 5d4617d0a5ed52f5d65c9db499365ac6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890dd83f395e283031001
+        version_id: '1705417132535440'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A2_nir.tif
+    md5: 954e5e7287fb4782f7c9a72c12ef6284
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089af7fbf295e283031001
+        version_id: '1705417132407706'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A2_red.tif
+    md5: f242ef3c0d56291bd9fae3c3f4d4d41d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aa87d8f495e283031001
+        version_id: '1705417136014250'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A2_red_edge.tif
+    md5: 9bce9ed181f702be370d0ae1a1babb97
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d3b190f495e283031001
+        version_id: '1705417134840019'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A3_green.tif
+    md5: 648534670d1160de3520fd12fe43723b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ccbfa9f395e283031001
+        version_id: '1705417133154252'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A3_nir.tif
+    md5: 9e56025628b4bf2cfb40db8f661c339b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08adf7c7f495e283031001
+        version_id: '1705417135750061'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A3_red.tif
+    md5: 0a43af7204f933956adfea6e2dfd663f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08adc3c4f495e283031001
+        version_id: '1705417135694253'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A3_red_edge.tif
+    md5: 69f4bb266e02eb7a407208de445ba672
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfc0b8f295e283031001
+        version_id: '1705417131302975'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A4_green.tif
+    md5: c493f0a62d7a0affac54448e4c779112
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebd4acf595e283031001
+        version_id: '1705417137400427'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A4_nir.tif
+    md5: b3a7cffb620cf40fad56d7cee901bf9a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e7c0e7f395e283031001
+        version_id: '1705417134170215'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A4_red.tif
+    md5: 3eb8311dca3cbd482f3aa35bf24a15e0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d48981f595e283031001
+        version_id: '1705417136686292'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A4_red_edge.tif
+    md5: 359b35ee79d95720b831e35b007170e3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eda592f595e283031001
+        version_id: '1705417136968429'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A5_green.tif
+    md5: 292af7182f4cdd94188a45c6d6744b80
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0891d9a7f595e283031001
+        version_id: '1705417137319057'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A5_nir.tif
+    md5: 95a17c64ae16b80147baee2c87d182bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c6b3b4f495e283031001
+        version_id: '1705417135430086'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A5_red.tif
+    md5: 4c793fc3b419a02e50e963ab611280f7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f09785f395e283031001
+        version_id: '1705417132559344'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A5_red_edge.tif
+    md5: c10090c2d398a4918c33fb07006183ec
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08afd88af495e283031001
+        version_id: '1705417134746671'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A6_green.tif
+    md5: 0ed8103d7143dff35e10e2f1a3fb9b29
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7cceef295e283031001
+        version_id: '1705417132189255'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A6_nir.tif
+    md5: b615618f1faafb087a6c7870aae6d5c2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fab7fcf495e283031001
+        version_id: '1705417136610298'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A6_red.tif
+    md5: af0ba9c3ef525fa7a4d1adf755de9bbf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d3e3d8f495e283031001
+        version_id: '1705417136026067'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A6_red_edge.tif
+    md5: 27e6110857aee4b4d16172f68cc7c009
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f2c6acf495e283031001
+        version_id: '1705417135301490'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A7_green.tif
+    md5: 79d579798760109903aa6234d757893a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bdef92f395e283031001
+        version_id: '1705417132783549'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A7_nir.tif
+    md5: 0ea5629769200f3d2c97b37b7c932642
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0896e59ff595e283031001
+        version_id: '1705417137189526'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A7_red.tif
+    md5: ac37c5f2e9499e159838574a0353a047
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08edf0b4f495e283031001
+        version_id: '1705417135437933'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A7_red_edge.tif
+    md5: 8b1edbab3c1af8220a99b9ff526d6e91
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d5adc2f395e283031001
+        version_id: '1705417133561557'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A8_green.tif
+    md5: fce89b0cc3fa5e5abff98091164fd3b4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f39ce0f395e283031001
+        version_id: '1705417134050931'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A8_nir.tif
+    md5: 5dbd27b9aec6bc7ecbacd63eebc8d816
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893a285f495e283031001
+        version_id: '1705417134657811'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A8_red.tif
+    md5: aca2fbac22de51dc54caeb83d8185b4d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dcbe8bf595e283031001
+        version_id: '1705417136856924'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A8_red_edge.tif
+    md5: cfe45f27db18641d6dcf553ebd5e909e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fca1eff395e283031001
+        version_id: '1705417134297340'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A9_green.tif
+    md5: bb880b753991af192f6409c0b4a089e5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9fba4f595e283031001
+        version_id: '1705417137274361'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A9_nir.tif
+    md5: 88549b3236297d22009cb9065f76a729
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0891d8ddf395e283031001
+        version_id: '1705417134009361'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A9_red.tif
+    md5: b508a95277c1a215c48f593ecd051580
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898d2baf395e283031001
+        version_id: '1705417133435160'
+  - relpath: raw/training5/lower_left_zero_kg_Nitrogen_A9_red_edge.tif
+    md5: 01396a533eddb7f732aefa1e255c8b24
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088fc181f495e283031001
+        version_id: '1705417134596239'
+  - relpath: raw/training5/training.zip
+    md5: c7617b100599346fd9bcf44bd5582e0b
+    size: 27400386
+    cloud:
+      remote_storage:
+        etag: 08a8f8d7f595e283031001
+        version_id: '1705417138109480'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B10_green.tif
+    md5: c2d0b50291c8d50b1582c50a22c71cf7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ddb286f595e283031001
+        version_id: '1705417136773469'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B10_nir.tif
+    md5: 87067b8ae3ade629b2764e9ec3b77fb7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f7c688f595e283031001
+        version_id: '1705417136808823'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B10_red.tif
+    md5: 44eb3b340b2064235a6d97f4227393e0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ccf9ccf395e283031001
+        version_id: '1705417133735116'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B10_red_edge.tif
+    md5: ba68a4d521d5f03bfe66d25ca7bc0fd7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0897cebff495e283031001
+        version_id: '1705417135613719'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B1_green.tif
+    md5: 047cc8f750d4a2fde56554961dc63247
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d2abe2f395e283031001
+        version_id: '1705417134085586'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B1_nir.tif
+    md5: 8a4d079739af2958d5f9975ed6e2d37d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088388f6f295e283031001
+        version_id: '1705417132311555'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B1_red.tif
+    md5: bd06e248f4e24f122b9aad69fe7005cb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ccb9c7f295e283031001
+        version_id: '1705417131547852'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B1_red_edge.tif
+    md5: bcf93cf18bbf2d516f9f851d3194e688
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f4dce0f495e283031001
+        version_id: '1705417136156276'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B2_green.tif
+    md5: 598bb25d86710cb8b0e14f373a5d390f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f5c799f495e283031001
+        version_id: '1705417134990325'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B2_nir.tif
+    md5: 761bcef38ea18b4e6fe4aa46250ce2de
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08febcc0f295e283031001
+        version_id: '1705417131433598'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B2_red.tif
+    md5: 4049f6ac9c501d8e10e23fbafb43a802
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890c5dbf495e283031001
+        version_id: '1705417136071312'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B2_red_edge.tif
+    md5: 217d75adff9f180823a06ddea15645b1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08affee9f295e283031001
+        version_id: '1705417132113711'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B3_green.tif
+    md5: e97902afdc74dfd0f3bb3a845b0ad7e3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cce8aaf595e283031001
+        version_id: '1705417137370188'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B3_nir.tif
+    md5: 399c79a61a411a2eeece5e89b5fa592d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0892c399f595e283031001
+        version_id: '1705417137086866'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B3_red.tif
+    md5: 6da82c9bd070e5bbdd5ae117b22fe21c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0881f782f395e283031001
+        version_id: '1705417132522369'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B3_red_edge.tif
+    md5: 05476369b16e5fce88844124c1aa6678
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a0e080f595e283031001
+        version_id: '1705417136680992'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B4_green.tif
+    md5: c6e08a8643a3a5e928ca6eef99688fad
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebd9c7f295e283031001
+        version_id: '1705417131551979'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B4_nir.tif
+    md5: bb5e3715f1a76f757e7af641faf5f176
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e49de2f295e283031001
+        version_id: '1705417131986660'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B4_red.tif
+    md5: 902c8af6ee94d9a01c9369b59ba57662
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f8e5b7f495e283031001
+        version_id: '1705417135485688'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B4_red_edge.tif
+    md5: e3b9eef0d0f7841334a70f4b3dabc712
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2989ff595e283031001
+        version_id: '1705417137179698'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B5_green.tif
+    md5: 45f080d316c4914e38a7c11294e297d0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e9f8c0f495e283031001
+        version_id: '1705417135635561'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B5_nir.tif
+    md5: d325ca22eea5be6a27a20b7b251441cc
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fbd5e6f395e283031001
+        version_id: '1705417134156539'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B5_red.tif
+    md5: e4a7ef2059ccdb2bd77c7971fbcf5456
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dea2b8f395e283031001
+        version_id: '1705417133396318'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B5_red_edge.tif
+    md5: 178bc4b582f2bb4b905d358610989973
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a3cafaf295e283031001
+        version_id: '1705417132385571'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B6_green.tif
+    md5: 19c497536ee92e8bdcd5a6521eb72ab5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899a085f495e283031001
+        version_id: '1705417134657561'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B6_nir.tif
+    md5: 6e99695eac9c38d1b3cf7911562d7321
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ecc7b6f495e283031001
+        version_id: '1705417135465452'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B6_red.tif
+    md5: c04d2bf30c3ca6ce39505549395db9e1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c4bbc9f295e283031001
+        version_id: '1705417131580868'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B6_red_edge.tif
+    md5: 93a47f72103115aa0893318cfeb37e95
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f3b5ebf395e283031001
+        version_id: '1705417134234355'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B7_green.tif
+    md5: d2db95e026840d0d5ae865916df544f8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d1b7edf395e283031001
+        version_id: '1705417134267345'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B7_nir.tif
+    md5: 28131bff4ce3b060deef5d18e6d5816e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08de8c9df495e283031001
+        version_id: '1705417135048286'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B7_red.tif
+    md5: ce74a230fdaeb8abe04dbeafb18e2b9d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089be49cf595e283031001
+        version_id: '1705417137140251'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B7_red_edge.tif
+    md5: bbc3854e33df442138cbc77e3bb3600c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b3a8b3f395e283031001
+        version_id: '1705417133315123'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B8_green.tif
+    md5: f4a60e35fb0cbf14a543c1e9d70ecbfe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e3a1dcf395e283031001
+        version_id: '1705417133986019'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B8_nir.tif
+    md5: 7765eb4bc569e113e5cb235b33371899
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aaf9c6f495e283031001
+        version_id: '1705417135733930'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B8_red.tif
+    md5: 6b95f5d1302b8ca98bc3fd237e5fb80b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ecff80f595e283031001
+        version_id: '1705417136685036'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B8_red_edge.tif
+    md5: b9d0a79b06d0f66f6ded9a88bb012787
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0897ae8ff495e283031001
+        version_id: '1705417134823191'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B9_green.tif
+    md5: 55617b89f497c8aae4ab6c7cabd24556
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b0ffbff495e283031001
+        version_id: '1705417135620016'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B9_nir.tif
+    md5: b487e9598b5b067e9f9cf3a2dbffddf6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893b0aef395e283031001
+        version_id: '1705417133234195'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B9_red.tif
+    md5: 5e1092c082a3717ebceeff6150245bfe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088795a6f495e283031001
+        version_id: '1705417135196807'
+  - relpath: raw/training5/upper_left_100kg_Nitrogen_B9_red_edge.tif
+    md5: 7ba0b3765ef676f537ec73798bb73daa
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1d794f395e283031001
+        version_id: '1705417132813217'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C10_green.tif
+    md5: 693e12c56047eb232488c38c81c108ca
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893c9ecf495e283031001
+        version_id: '1705417136350355'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C10_nir.tif
+    md5: 6f7e62a05e637ab2d45464a5572e9b49
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886f1fbf495e283031001
+        version_id: '1705417136601222'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C10_red.tif
+    md5: 55989ab97313178f1434453d0571c8bb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fbd180f495e283031001
+        version_id: '1705417134582011'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C10_red_edge.tif
+    md5: 4a67af8037d1288eb2f61f9a6a1d1d6b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b8c0e2f395e283031001
+        version_id: '1705417134088248'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C1_green.tif
+    md5: d9cc6aeb8f8b3387158b2eb6d53c0af8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ddc0c1f395e283031001
+        version_id: '1705417133547613'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C1_nir.tif
+    md5: 88510b23856d9cafc08cbfba226bc9fd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e097eef495e283031001
+        version_id: '1705417136376800'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C1_red.tif
+    md5: f8278b651ca2a6a462a073def6884903
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e8bdbaf395e283031001
+        version_id: '1705417133432552'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C1_red_edge.tif
+    md5: 085616160547034346e4d78aaf5b78b5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b3debaf495e283031001
+        version_id: '1705417135533875'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C2_green.tif
+    md5: e324d28c4648a61a8757e1241b412c93
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fbb0adf395e283031001
+        version_id: '1705417133217915'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C2_nir.tif
+    md5: abe52e1b4223d825a6d31ad17b1e3823
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fb9e84f595e283031001
+        version_id: '1705417136738171'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C2_red.tif
+    md5: cdcb21facee10ae8b8256d7daf0fef46
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0888f4cdf395e283031001
+        version_id: '1705417133750792'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C2_red_edge.tif
+    md5: c0bc281e8740d84224ffcd66caef35b9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f2e8d7f295e283031001
+        version_id: '1705417131816050'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C3_green.tif
+    md5: 5ea57d3af9049ac4b6dea324760f5273
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b4a6bdf295e283031001
+        version_id: '1705417131381556'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C3_nir.tif
+    md5: 42044f0a1a476dd391973220f17a7c70
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c181a0f395e283031001
+        version_id: '1705417132998849'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C3_red.tif
+    md5: e9b19b5f72f1582f517015ceb0641281
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fdafc8f395e283031001
+        version_id: '1705417133660157'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C3_red_edge.tif
+    md5: f263a632bdff961a6f3acfcb0470efc3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088aaed1f395e283031001
+        version_id: '1705417133807370'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C4_green.tif
+    md5: 2e49729636db093fe3a41511569b40d3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bbc0eef495e283031001
+        version_id: '1705417136382011'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C4_nir.tif
+    md5: 6c412b6e2ae5b0dccb54fd545ceb91a5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fac884f495e283031001
+        version_id: '1705417134646394'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C4_red.tif
+    md5: 75d659f776224b5395e60ada4527ece1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fcee9af595e283031001
+        version_id: '1705417137108860'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C4_red_edge.tif
+    md5: d86f7e27fcef25e3484790dcf1bc211d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088df4cef295e283031001
+        version_id: '1705417131670029'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C5_green.tif
+    md5: 67fb810cff14e2dda18d301f185a8743
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0894b494f395e283031001
+        version_id: '1705417132808724'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C5_nir.tif
+    md5: 218dadf9212388d5189feb0b57dedd0e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3d8c9f495e283031001
+        version_id: '1705417135778883'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C5_red.tif
+    md5: 39a721b345e76f38081e894ff6257d2d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f2cba3f495e283031001
+        version_id: '1705417135154674'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C5_red_edge.tif
+    md5: 29b866a550a501f73bff48148e648f60
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c6c9c6f395e283031001
+        version_id: '1705417133630662'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C6_green.tif
+    md5: f3ee968bc9cfdc53e0d0e5c8dea27254
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08efc1b4f395e283031001
+        version_id: '1705417133334767'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C6_nir.tif
+    md5: e7010c0cc7c336eafd3ce17ee2b73c69
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089ad197f495e283031001
+        version_id: '1705417134958746'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C6_red.tif
+    md5: 7fe6351b23c54a89649da42fb9426576
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ebcf1f495e283031001
+        version_id: '1705417136430606'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C6_red_edge.tif
+    md5: 66fc65535c7ceaeba99d19d2901568d7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bba8d0f295e283031001
+        version_id: '1705417131693115'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C7_green.tif
+    md5: ff3c3fa07b26b0f464dd9178de993701
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0893e288f495e283031001
+        version_id: '1705417134715155'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C7_nir.tif
+    md5: 4dc3b5b3c3160e1fdb68edef5f769f78
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089ee8a2f395e283031001
+        version_id: '1705417133044766'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C7_red.tif
+    md5: 8d45e5f20f5cf7b1eee601592200af92
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eff9acf495e283031001
+        version_id: '1705417135308015'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C7_red_edge.tif
+    md5: 9e597908cdd835bfedd66496a690b551
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f1f5a1f395e283031001
+        version_id: '1705417133030129'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C8_green.tif
+    md5: 78e11742011760f8d7b03e7a6093c32a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bc8bf1f495e283031001
+        version_id: '1705417136424380'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C8_nir.tif
+    md5: 67cda77740590fab93634afc1edd98b0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f2a88af395e283031001
+        version_id: '1705417132643442'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C8_red.tif
+    md5: 491012a923c0c0e69b14641d5cc03235
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c69edff295e283031001
+        version_id: '1705417131937606'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C8_red_edge.tif
+    md5: 2057a07768267700bb83baf71147b9d5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0887f5d5f295e283031001
+        version_id: '1705417131784839'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C9_green.tif
+    md5: 4141976a6f5377a1595bdfc79da63002
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0882dfdcf395e283031001
+        version_id: '1705417133993858'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C9_nir.tif
+    md5: be8e0dc0be62bcd59d009659403a2d9c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089d9a82f495e283031001
+        version_id: '1705417134607645'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C9_red.tif
+    md5: b90ad4ad65729c20a98f11b77cb303f4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a7fdc2f395e283031001
+        version_id: '1705417133571751'
+  - relpath: raw/training5/upper_left_200kg_Nitrogen_C9_red_edge.tif
+    md5: 61f5be8db01ff10893a60332f3a8a82a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886fde8f295e283031001
+        version_id: '1705417132097158'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D10_green.tif
+    md5: fb50bdd2312fb45fc244d0aad57c66eb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089df0c1f295e283031001
+        version_id: '1705417131456541'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D10_nir.tif
+    md5: eff11591c3f80cf80dff887a7ec1b8e1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eefbc4f295e283031001
+        version_id: '1705417131507182'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D10_red.tif
+    md5: 6a0718166e937ad2f0e3a433fd26aee4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0885a2bff295e283031001
+        version_id: '1705417131413765'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D10_red_edge.tif
+    md5: 88578cef1c474d5abfab3f0864b6390a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fcc79af495e283031001
+        version_id: '1705417135006716'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D1_green.tif
+    md5: 38e9745daa0ec721d0c9d8f394bfb506
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5bad6f295e283031001
+        version_id: '1705417131793717'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D1_nir.tif
+    md5: 261931309ef8889bd5436fcd85173cda
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bf9ec7f295e283031001
+        version_id: '1705417131544383'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D1_red.tif
+    md5: 968a4e3a761e58f39679d34a5a63854f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e28e89f495e283031001
+        version_id: '1705417134720866'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D1_red_edge.tif
+    md5: 6c4024a917dad29024508a97a754c178
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0887caa0f595e283031001
+        version_id: '1705417137202439'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D2_green.tif
+    md5: 1310f3dc97cb981bf6034dfbebcfa767
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088e9c82f395e283031001
+        version_id: '1705417132510734'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D2_nir.tif
+    md5: 63afcdd8ab9f2050ec7c130e9e24cc7b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0894a1d2f395e283031001
+        version_id: '1705417133822100'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D2_red.tif
+    md5: 25c641193bb80841e97d49e5d86926fd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d39ae7f395e283031001
+        version_id: '1705417134165331'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D2_red_edge.tif
+    md5: 71fa7bed649c704ec456599a39cdcc6e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089387e3f495e283031001
+        version_id: '1705417136194451'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D3_green.tif
+    md5: 4c6f7965e2d94e593ad3f7c7da3f2086
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9dde2f495e283031001
+        version_id: '1705417136189177'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D3_nir.tif
+    md5: ca1e4062406b5a67d4b7ed591319e612
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bec0d2f295e283031001
+        version_id: '1705417131728958'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D3_red.tif
+    md5: 979aaa20488c18b89ffe2210fecb2e3d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c88193f495e283031001
+        version_id: '1705417134883016'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D3_red_edge.tif
+    md5: 1a99594274e7b53a4c0c8693179774e6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d58dbcf395e283031001
+        version_id: '1705417133459157'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D4_green.tif
+    md5: 8dcb5d0f92941d58c64026713e5f32a9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0880b9c7f495e283031001
+        version_id: '1705417135742080'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D4_nir.tif
+    md5: 557a26005de9534139c805402dcb2aed
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08feaab5f395e283031001
+        version_id: '1705417133348222'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D4_red.tif
+    md5: d43a3d39b72002bfadd855ef84948585
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d49c81f495e283031001
+        version_id: '1705417134591572'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D4_red_edge.tif
+    md5: 8de4acc71610b49f262f6d4671346847
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898f5f9f295e283031001
+        version_id: '1705417132374680'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D5_green.tif
+    md5: dc1927d539c011d3d69e480a5caa96b5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089df7cdf395e283031001
+        version_id: '1705417133751197'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D5_nir.tif
+    md5: 7d0d4fe9345b8674b53257b25db8920c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fe9894f395e283031001
+        version_id: '1705417132805246'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D5_red.tif
+    md5: 835ad10e974a9021ddb5f475f5b9827c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a5bb88f395e283031001
+        version_id: '1705417132613029'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D5_red_edge.tif
+    md5: c090de6dc7b50115f5387e56eedc4dbe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088fa0edf395e283031001
+        version_id: '1705417134264335'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D6_green.tif
+    md5: a296256b7e731be80d4c774a951126c9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0819bf395e283031001
+        version_id: '1705417132916960'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D6_nir.tif
+    md5: 4dda4059016326d9f50597523d0e7b7b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e1f599f495e283031001
+        version_id: '1705417134996193'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D6_red.tif
+    md5: eef9b48dad62d603db2874cf86f086c4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ff492f395e283031001
+        version_id: '1705417132784143'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D6_red_edge.tif
+    md5: ec2ab7f044bb358823518fbac55ed8a4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e9d09df395e283031001
+        version_id: '1705417132959849'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D7_green.tif
+    md5: 70c16d4cdfbaa4247a421149b5101aa5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088080dff395e283031001
+        version_id: '1705417134030848'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D7_nir.tif
+    md5: 735f6c1151dfa2f6fc6143573e24c150
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e491b9f495e283031001
+        version_id: '1705417135507684'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D7_red.tif
+    md5: 57f1ad6e024230c64fdc2026a2f07316
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890f8e9f295e283031001
+        version_id: '1705417132112912'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D7_red_edge.tif
+    md5: 47eaaee78c576c4cdc36d5f506db920d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e1c8f8f395e283031001
+        version_id: '1705417134449761'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D8_green.tif
+    md5: 3096058c5c5c15c0e619e8dcce617b1c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f4e6edf495e283031001
+        version_id: '1705417136370548'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D8_nir.tif
+    md5: 36b8513798df2563221340e0e602f025
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7d1c5f295e283031001
+        version_id: '1705417131518151'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D8_red.tif
+    md5: 99882a1ec7bf684bd542ee5f88aa8427
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08be88a8f495e283031001
+        version_id: '1705417135227966'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D8_red_edge.tif
+    md5: 74dc27cd806c121484a0a40963022a43
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c5c993f595e283031001
+        version_id: '1705417136989381'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D9_green.tif
+    md5: 77905b5478e811928cdee53734afdee6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f4a587f395e283031001
+        version_id: '1705417132593908'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D9_nir.tif
+    md5: b62a278caa69109bd8de15705da36bc5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c4e8a5f495e283031001
+        version_id: '1705417135191108'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D9_red.tif
+    md5: 43e0ef099f5106153a9fb9b73221b27d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abc28bf595e283031001
+        version_id: '1705417136857387'
+  - relpath: raw/training5/upper_left_300kg_Nitrogen_D9_red_edge.tif
+    md5: e9d6c93435b9e9a0248962e576b37d4c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0897d7f6f495e283031001
+        version_id: '1705417136515991'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A10_green.tif
+    md5: a622c8787bbe690ff6b8ea95bb1be887
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0895dd80f395e283031001
+        version_id: '1705417132486293'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A10_nir.tif
+    md5: 5948af4dd95a898a3173afe510f30c8f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0892d3b4f495e283031001
+        version_id: '1705417135434130'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A10_red.tif
+    md5: 35d8d4c286d78058b02f7ad43152d97e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0882f7e7f495e283031001
+        version_id: '1705417136274306'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A10_red_edge.tif
+    md5: 0b07150fe35fc89cd8dad58c5c71e959
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfc7d6f295e283031001
+        version_id: '1705417131795391'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A1_green.tif
+    md5: 147d06ac93fd7f91a042e77d90cd224f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e6df84f595e283031001
+        version_id: '1705417136746470'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A1_nir.tif
+    md5: c621bc4c22e7eef0ac46e2c83a67ac82
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c480eaf495e283031001
+        version_id: '1705417136308292'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A1_red.tif
+    md5: f56986cef6309185ace9f9147d4e5189
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dda1eff395e283031001
+        version_id: '1705417134297309'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A1_red_edge.tif
+    md5: 0ca881514908600990a14968e73fc853
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e2a2d0f495e283031001
+        version_id: '1705417135886690'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A2_green.tif
+    md5: bd910ddc62f5d8c9c9c72f214578c44c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aec3cef395e283031001
+        version_id: '1705417133760942'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A2_nir.tif
+    md5: 0f6765b0d8c1a88aab54a7fd052efa37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abe8ebf295e283031001
+        version_id: '1705417132143659'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A2_red.tif
+    md5: cbde714977175714cca3829bf7ff6fe9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c181d8f495e283031001
+        version_id: '1705417136013505'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A2_red_edge.tif
+    md5: 6d0bdf9fd283c1a45549fd1286bde6b8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089386adf395e283031001
+        version_id: '1705417133212435'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A3_green.tif
+    md5: deaa6ddbe56444cfd36206b80f6cf6d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0883bad2f295e283031001
+        version_id: '1705417131728131'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A3_nir.tif
+    md5: 67873156b071be409d1bbb0dce5f240a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c5d893f495e283031001
+        version_id: '1705417134894149'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A3_red.tif
+    md5: 6de84e64e38a03d3967b1c21b3b1e163
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f788fcf495e283031001
+        version_id: '1705417136604279'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A3_red_edge.tif
+    md5: 6b4340568c824b24ed7bd395ac2b1c5d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890cff0f395e283031001
+        version_id: '1705417134319504'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A4_green.tif
+    md5: aa11206514b40ad33de68d0557713295
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5a490f495e283031001
+        version_id: '1705417134838325'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A4_nir.tif
+    md5: 72f9e66950acf1107f777042a3205aa0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7a08cf595e283031001
+        version_id: '1705417136869447'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A4_red.tif
+    md5: 91382420d6a7f55fc68ddcb867a626f1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0882e5f6f395e283031001
+        version_id: '1705417134420610'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A4_red_edge.tif
+    md5: 1bcc4267cf989911e66800936f2d7dd1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f5fee9f495e283031001
+        version_id: '1705417136308085'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A5_green.tif
+    md5: b6f711115574e48ac1e23a561f18c258
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ddb1bcf395e283031001
+        version_id: '1705417133463773'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A5_nir.tif
+    md5: 8d0dd4a68ae9967c3a6da3f353a8a043
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a4d3acf495e283031001
+        version_id: '1705417135303076'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A5_red.tif
+    md5: 415e3008cb6bc8301afc5a89e75c8810
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08db91ebf495e283031001
+        version_id: '1705417136326875'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A5_red_edge.tif
+    md5: df8adb57b37473d7458e51c126303a3a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bfd8a5f595e283031001
+        version_id: '1705417137286207'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A6_green.tif
+    md5: d3fd85f8944429eaaca3d0ecd04d0c46
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c090f9f295e283031001
+        version_id: '1705417132361792'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A6_nir.tif
+    md5: d02d2fc60d741e68fdbfd0980a15599d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d7cf9bf395e283031001
+        version_id: '1705417132926935'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A6_red.tif
+    md5: a4e03649023c20756b09b5ea3cb043d7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0894f29af395e283031001
+        version_id: '1705417132914964'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A6_red_edge.tif
+    md5: cd323256ed996fa1f266574bbefe1162
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0891c68bf595e283031001
+        version_id: '1705417136857873'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A7_green.tif
+    md5: 22697133265ec515334961eea7f4bf94
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ccefd5f495e283031001
+        version_id: '1705417135978444'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A7_nir.tif
+    md5: e9cdcdabd9a601adebbeab3a8348b88e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aa84def495e283031001
+        version_id: '1705417136112170'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A7_red.tif
+    md5: 940459b1f83e49f38a0aafd2030de255
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b5eeeef295e283031001
+        version_id: '1705417132193589'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A7_red_edge.tif
+    md5: 7f8198bd3607d85ccd739505f62184bf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c6e5f0f495e283031001
+        version_id: '1705417136419526'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A8_green.tif
+    md5: f7e20cf55a6e01d7d6318f41865468b6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aecce1f395e283031001
+        version_id: '1705417134073390'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A8_nir.tif
+    md5: bc32af7d6599f72fa0c2a0deef15afaf
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0885fce7f395e283031001
+        version_id: '1705417134177797'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A8_red.tif
+    md5: aafbd130fdba9a36a81c3c32953c408c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f689a1f395e283031001
+        version_id: '1705417133016310'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A8_red_edge.tif
+    md5: 5ea76a0627d10c43452618664e0331ed
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d8fa99f395e283031001
+        version_id: '1705417132899672'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A9_green.tif
+    md5: 9064ac1a4f3314cbe03c1116bbf0a1f1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c08881f395e283031001
+        version_id: '1705417132491840'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A9_nir.tif
+    md5: 7ff666e181ff3706ad6d62b10d796aa5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a28afaf395e283031001
+        version_id: '1705417134474530'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A9_red.tif
+    md5: 57377cee727e456b21423285d82051b8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c5c8e9f495e283031001
+        version_id: '1705417136301125'
+  - relpath: raw/training5/upper_left_zero_Nitrogen_A9_red_edge.tif
+    md5: e72cf425eca42466a22c56617d578f60
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e8bbcbf295e283031001
+        version_id: '1705417131613672'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B10_green.tif
+    md5: 88b3024e7320c030d42965e76bf3808b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9b2e6f295e283031001
+        version_id: '1705417132054905'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B10_nir.tif
+    md5: 1d28e82ec3106e5e9eb11f3129a22a84
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b993f7f395e283031001
+        version_id: '1705417134426553'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B10_red.tif
+    md5: 97e7cddf65cf21e55f703e8761b2518b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fcadf6f395e283031001
+        version_id: '1705417134413564'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B10_red_edge.tif
+    md5: 8610620b7fa718c796a433c3666b7146
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7b284f395e283031001
+        version_id: '1705417132546375'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B1_green.tif
+    md5: f3e688dafc38c4e8b6920db42a363854
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f3bca8f495e283031001
+        version_id: '1705417135234675'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B1_nir.tif
+    md5: 332d616283eacd58b38ece2f72906d4b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fb89c8f295e283031001
+        version_id: '1705417131558139'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B1_red.tif
+    md5: 8a36896f92d2a1f6bbe957ab16f8b018
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3c390f495e283031001
+        version_id: '1705417134842307'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B1_red_edge.tif
+    md5: 3725366d2b17b5a9268f8818c83d8df1
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dbe787f395e283031001
+        version_id: '1705417132602331'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B2_green.tif
+    md5: 51656e32dc38bc125e879834d055c977
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b8ef85f495e283031001
+        version_id: '1705417134667704'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B2_nir.tif
+    md5: f63bd01d2d6102098e96ba74c2a7cc7e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ff91e6f295e283031001
+        version_id: '1705417132050687'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B2_red.tif
+    md5: 57403b6f70fd3b4e76ef87db265116b5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d9d2f8f295e283031001
+        version_id: '1705417132353881'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B2_red_edge.tif
+    md5: bba297a0437055c0b501c9835c98b64c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e3d3dcf295e283031001
+        version_id: '1705417131895267'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B3_green.tif
+    md5: 19bb9fc03729d943a90e0b1d516ba8e3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0892a8e0f395e283031001
+        version_id: '1705417134052370'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B3_nir.tif
+    md5: 0744a086db7b361b52f62c15aacdc753
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886d3e0f295e283031001
+        version_id: '1705417131960710'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B3_red.tif
+    md5: d6ee825ef386485964242f357a2cc828
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0888c9f2f295e283031001
+        version_id: '1705417132254344'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B3_red_edge.tif
+    md5: 4747057e4521a12602f5b593809d4335
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e8d2c8f495e283031001
+        version_id: '1705417135761768'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B4_green.tif
+    md5: b8d4f3cd821f763ddcb8451ee49eb4be
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d9db9ef595e283031001
+        version_id: '1705417137171929'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B4_nir.tif
+    md5: b4c1e8bd565ace2ca080e0a4cc7fc0c3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b6cf95f595e283031001
+        version_id: '1705417137022902'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B4_red.tif
+    md5: 0729ef541a8b2f2a40d4cc72bfd4a7d5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b7a1b6f295e283031001
+        version_id: '1705417131266231'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B4_red_edge.tif
+    md5: b0296ea6dbb0b58a451c2e1da0c092e4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dd82ecf295e283031001
+        version_id: '1705417132147037'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B5_green.tif
+    md5: 75c9ae3479d87b04a2ba47f05d9d5d2a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bf8889f495e283031001
+        version_id: '1705417134720063'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B5_nir.tif
+    md5: 01e0cb1bb1011022885962c6ea7035be
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890f087f595e283031001
+        version_id: '1705417136797712'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B5_red.tif
+    md5: 7f62d5918d89d1260c3360a826d25ab3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dcb0a4f395e283031001
+        version_id: '1705417133070428'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B5_red_edge.tif
+    md5: 6d8afa0667f76481e081527d0298ca4e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a5e0a2f495e283031001
+        version_id: '1705417135140901'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B6_green.tif
+    md5: ef2685c21e6939151b59e03389a153f7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f59281f395e283031001
+        version_id: '1705417132493173'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B6_nir.tif
+    md5: ba8d3d847a0b6cd42f0ed85f120150e3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cab5a1f495e283031001
+        version_id: '1705417135119050'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B6_red.tif
+    md5: a5eba164836b7e7470948afe1a543a69
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089ce3f8f395e283031001
+        version_id: '1705417134453148'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B6_red_edge.tif
+    md5: c9edbd69d0d4ad2b7b7c80c2b67b1049
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b0ea8df595e283031001
+        version_id: '1705417136895280'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B7_green.tif
+    md5: d2db95e026840d0d5ae865916df544f8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bdc4aff495e283031001
+        version_id: '1705417135350333'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B7_nir.tif
+    md5: 28131bff4ce3b060deef5d18e6d5816e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f5aad7f495e283031001
+        version_id: '1705417136002421'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B7_red.tif
+    md5: ce74a230fdaeb8abe04dbeafb18e2b9d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0891f79df495e283031001
+        version_id: '1705417135061905'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B7_red_edge.tif
+    md5: bbc3854e33df442138cbc77e3bb3600c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a98dd6f295e283031001
+        version_id: '1705417131787945'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B8_green.tif
+    md5: 36cb9d595a5767da00df9305f9339e8f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f68dbaf295e283031001
+        version_id: '1705417131329270'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B8_nir.tif
+    md5: bbfba951c95609a8bf9d07c59a3187a3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d0cba6f495e283031001
+        version_id: '1705417135203792'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B8_red.tif
+    md5: 662f42f3ab87b4b74117c2655188d505
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b8daf5f395e283031001
+        version_id: '1705417134402872'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B8_red_edge.tif
+    md5: 1cf59e9f8e191daacda41c129afd53bd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ef909ef595e283031001
+        version_id: '1705417137162351'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B9_green.tif
+    md5: 55617b89f497c8aae4ab6c7cabd24556
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bcd990f495e283031001
+        version_id: '1705417134845116'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B9_nir.tif
+    md5: b487e9598b5b067e9f9cf3a2dbffddf6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0891fabdf495e283031001
+        version_id: '1705417135586577'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B9_red.tif
+    md5: 5e1092c082a3717ebceeff6150245bfe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08abd5a9f595e283031001
+        version_id: '1705417137351339'
+  - relpath: raw/training5/upper_right_100kg_Nitrogen_B9_red_edge.tif
+    md5: 7ba0b3765ef676f537ec73798bb73daa
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d694b6f495e283031001
+        version_id: '1705417135458902'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C10_green.tif
+    md5: 693e12c56047eb232488c38c81c108ca
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0cbbff495e283031001
+        version_id: '1705417135613408'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C10_nir.tif
+    md5: 6f7e62a05e637ab2d45464a5572e9b49
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bcdbf2f295e283031001
+        version_id: '1705417132256700'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C10_red.tif
+    md5: 55989ab97313178f1434453d0571c8bb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0880d9fcf395e283031001
+        version_id: '1705417134517376'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C10_red_edge.tif
+    md5: 4a67af8037d1288eb2f61f9a6a1d1d6b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c0d9cef295e283031001
+        version_id: '1705417131666624'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C1_green.tif
+    md5: fcc0b89ff7509b1506b8db0a8b538b9a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b09fdcf395e283031001
+        version_id: '1705417133985712'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C1_nir.tif
+    md5: d5b89ad20364e89d3f3165f4c7c5eb06
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0895a79cf495e283031001
+        version_id: '1705417135035285'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C1_red.tif
+    md5: 0977e5efe808ad770b55bebdf0f60661
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089cc6d0f495e283031001
+        version_id: '1705417135891228'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C1_red_edge.tif
+    md5: f9bba444ee69c82e4955676947b2b322
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08acd78ff495e283031001
+        version_id: '1705417134828460'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C2_green.tif
+    md5: 707472a2625c8efbf96f37bc535eedc6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e985a2f595e283031001
+        version_id: '1705417137226473'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C2_nir.tif
+    md5: d25a05e92b5a736db22fbb8739788310
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aef0a2f395e283031001
+        version_id: '1705417133045806'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C2_red.tif
+    md5: 84bd8ae131b8c2234d516f68814e7a23
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7c996f395e283031001
+        version_id: '1705417132844231'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C2_red_edge.tif
+    md5: 34ea00fcf49ba361d89b7bc937f4f6d3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d099b3f495e283031001
+        version_id: '1705417135410384'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C3_green.tif
+    md5: 5ea57d3af9049ac4b6dea324760f5273
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08be85a3f595e283031001
+        version_id: '1705417137242814'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C3_nir.tif
+    md5: 42044f0a1a476dd391973220f17a7c70
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089690faf295e283031001
+        version_id: '1705417132378134'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C3_red.tif
+    md5: e9b19b5f72f1582f517015ceb0641281
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08bce0fef295e283031001
+        version_id: '1705417132453948'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C3_red_edge.tif
+    md5: f263a632bdff961a6f3acfcb0470efc3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f5b09bf495e283031001
+        version_id: '1705417135020149'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C4_green.tif
+    md5: 99529ddffc4172db64c0a66928cccc29
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08debfdcf395e283031001
+        version_id: '1705417133989854'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C4_nir.tif
+    md5: d8d9eaf360b9e0d3e88d6979c02ce8e5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f1c2c0f295e283031001
+        version_id: '1705417131434353'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C4_red.tif
+    md5: 3618486c8e55d3964990e714e4dd4773
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089283fcf495e283031001
+        version_id: '1705417136603538'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C4_red_edge.tif
+    md5: b7943fb82f930097d72264a6a91d01fd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0880c095f395e283031001
+        version_id: '1705417132826624'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C5_green.tif
+    md5: b0a6a3a44d4685305bcf9646b8686fe5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eeb7c6f395e283031001
+        version_id: '1705417133628398'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C5_nir.tif
+    md5: d5940e463ae400824459e14bbb8d08d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088dbb92f395e283031001
+        version_id: '1705417132776845'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C5_red.tif
+    md5: b16f5ce1d05017392179332def44ee25
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e2b9d0f495e283031001
+        version_id: '1705417135889634'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C5_red_edge.tif
+    md5: 3f1373df8d1703e825b2097fdfd34b80
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c1a5f0f295e283031001
+        version_id: '1705417132217025'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C6_green.tif
+    md5: 42fcf602464284af90ad885d406e021a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088dd8a6f395e283031001
+        version_id: '1705417133108237'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C6_nir.tif
+    md5: 76424db83d936f42b0662861eabe4c50
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fa89e2f295e283031001
+        version_id: '1705417131984122'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C6_red.tif
+    md5: 034ca19a0a885a30f1b0f170107d942b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c48adaf395e283031001
+        version_id: '1705417133950276'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C6_red_edge.tif
+    md5: 6a8a820b25b697fa857d1a5dd64b15f0
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ae849cf395e283031001
+        version_id: '1705417132933678'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C7_green.tif
+    md5: ff3c3fa07b26b0f464dd9178de993701
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f692e8f495e283031001
+        version_id: '1705417136277878'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C7_nir.tif
+    md5: 4dc3b5b3c3160e1fdb68edef5f769f78
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088c9bddf495e283031001
+        version_id: '1705417136098700'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C7_red.tif
+    md5: 8d45e5f20f5cf7b1eee601592200af92
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c8bcbaf495e283031001
+        version_id: '1705417135529544'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C7_red_edge.tif
+    md5: 9e597908cdd835bfedd66496a690b551
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089288bcf295e283031001
+        version_id: '1705417131361298'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C8_green.tif
+    md5: 00df5ab5cc5565b4029cd915819a5d07
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0881a8c0f295e283031001
+        version_id: '1705417131430913'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C8_nir.tif
+    md5: 38f40616f4a77e76bc98cd665e63c913
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c196edf495e283031001
+        version_id: '1705417136360257'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C8_red.tif
+    md5: dbff6fda24c71448996eb5f17f8dee1f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088b97d9f495e283031001
+        version_id: '1705417136032651'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C8_red_edge.tif
+    md5: 41f3e37dd99c7e62c327c22dd9690730
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a69ff9f295e283031001
+        version_id: '1705417132363686'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C9_green.tif
+    md5: 13b9bfced946fb798d1df105c0bca767
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088197fbf395e283031001
+        version_id: '1705417134492545'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C9_nir.tif
+    md5: 5d722dffb627ec67f7f44ac665fe5176
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c986f1f395e283031001
+        version_id: '1705417134326601'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C9_red.tif
+    md5: bd98886db0e0a3b171d19dc7db17308f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d0a0bef395e283031001
+        version_id: '1705417133494352'
+  - relpath: raw/training5/upper_right_200kg_Nitrogen_C9_red_edge.tif
+    md5: 6a3f7ba79c045f6a2d0fc5be37218c89
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cef7a3f395e283031001
+        version_id: '1705417133063118'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D10_green.tif
+    md5: a97271b1674510b1e88c174f75e2672c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c8c0f8f495e283031001
+        version_id: '1705417136545864'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D10_nir.tif
+    md5: 7cbbebde0b66a5bfb340062859f71834
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d28de6f495e283031001
+        version_id: '1705417136244434'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D10_red.tif
+    md5: d4c785ef4d8da3438c064908190344fd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eaa78ef395e283031001
+        version_id: '1705417132708842'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D10_red_edge.tif
+    md5: 7f22ef2648ffd9b39f0de1248a9e5a6f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fe86dcf295e283031001
+        version_id: '1705417131885438'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D1_green.tif
+    md5: ae33882e17e5638af309a4fc2d831df3
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08efc2ddf495e283031001
+        version_id: '1705417136103791'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D1_nir.tif
+    md5: 52658143b44c453aa1e019942729fc00
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a3c6d0f295e283031001
+        version_id: '1705417131696931'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D1_red.tif
+    md5: bea3f5fff47c9fa973d9429ac90d6951
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f99ee5f295e283031001
+        version_id: '1705417132035961'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D1_red_edge.tif
+    md5: 5e8b87aa2f7e0519f2462474b0979213
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aae9f8f395e283031001
+        version_id: '1705417134453930'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D2_green.tif
+    md5: ac1d30326c8d13da231cc8b418da6a8c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ff0cdf495e283031001
+        version_id: '1705417135847439'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D2_nir.tif
+    md5: 96d480ee40d6eb53dae71488befaa9c6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b8bc9ef595e283031001
+        version_id: '1705417137167928'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D2_red.tif
+    md5: 3ab1ad2075ce11c79df0660ea2cf1916
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fbf7ccf395e283031001
+        version_id: '1705417133734907'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D2_red_edge.tif
+    md5: 488532512fe36b271616f9d048dc208c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a3a782f595e283031001
+        version_id: '1705417136706467'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D3_green.tif
+    md5: 4c6f7965e2d94e593ad3f7c7da3f2086
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2f4aef395e283031001
+        version_id: '1705417133242930'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D3_nir.tif
+    md5: ca1e4062406b5a67d4b7ed591319e612
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088afdd4f395e283031001
+        version_id: '1705417133866634'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D3_red.tif
+    md5: 979aaa20488c18b89ffe2210fecb2e3d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0898c3bef495e283031001
+        version_id: '1705417135595928'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D3_red_edge.tif
+    md5: 1a99594274e7b53a4c0c8693179774e6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d493e7f395e283031001
+        version_id: '1705417134164436'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D4_green.tif
+    md5: cf8f42623893526c85536d7ab51c9e7c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dfebd0f395e283031001
+        version_id: '1705417133798879'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D4_nir.tif
+    md5: f8468324c64b371157d00bd3120142ff
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08cbf5aaf495e283031001
+        version_id: '1705417135274699'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D4_red.tif
+    md5: 5a4b787cf3dc8b94403deec101905f35
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e88a95f395e283031001
+        version_id: '1705417132819816'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D4_red_edge.tif
+    md5: 5cee11e5cdc8d62545d8b06f793dab44
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089e9fc4f395e283031001
+        version_id: '1705417133592478'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D5_green.tif
+    md5: dc1927d539c011d3d69e480a5caa96b5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088185d5f395e283031001
+        version_id: '1705417133867649'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D5_nir.tif
+    md5: 7d0d4fe9345b8674b53257b25db8920c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aec794f495e283031001
+        version_id: '1705417134908334'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D5_red.tif
+    md5: 835ad10e974a9021ddb5f475f5b9827c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ea9ffaf395e283031001
+        version_id: '1705417134477290'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D5_red_edge.tif
+    md5: c090de6dc7b50115f5387e56eedc4dbe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088fab83f595e283031001
+        version_id: '1705417136723343'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D6_green.tif
+    md5: a42653574c4726688098da17d959d97d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e0d7f1f495e283031001
+        version_id: '1705417136434144'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D6_nir.tif
+    md5: 5ee51a95f458b40df88d85ec25a151d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d2f3f7f495e283031001
+        version_id: '1705417136536018'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D6_red.tif
+    md5: 687b111949d3d7bd6adea75b652217a9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e5d2def295e283031001
+        version_id: '1705417131927909'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D6_red_edge.tif
+    md5: f85cbe1e4be8b9861dd7a8dfcca967f9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b99d81f595e283031001
+        version_id: '1705417136688825'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D7_green.tif
+    md5: 8e012717c1b664d31713739ea755e5b2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aee68cf495e283031001
+        version_id: '1705417134781230'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D7_nir.tif
+    md5: ef2d126f3f7490ca9a27f64cfa0d757f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f6cbaef395e283031001
+        version_id: '1705417133237750'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D7_red.tif
+    md5: 72373be9e92b5be993a92a4bb0d2aa45
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dccbabf495e283031001
+        version_id: '1705417135285724'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D7_red_edge.tif
+    md5: 9ff811e8dd39cbedd2d6764be2892dcb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08fcdbfcf295e283031001
+        version_id: '1705417132420604'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D8_green.tif
+    md5: 00fbafbbe375435462e15873d602cda6
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088b8fbcf295e283031001
+        version_id: '1705417131362187'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D8_nir.tif
+    md5: ab8d4adc7dbb49b8e823605d106b80cd
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ebb8d8f395e283031001
+        version_id: '1705417133923435'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D8_red.tif
+    md5: 881923e21a00cb0b97d8621ae64a39f5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088c8ab7f295e283031001
+        version_id: '1705417131279628'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D8_red_edge.tif
+    md5: 32d7717779f245e9656e0de4a8c1d723
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0881c0c8f395e283031001
+        version_id: '1705417133662209'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D9_green.tif
+    md5: efa2a0377808361e81f4ba68d5556440
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0884f69af395e283031001
+        version_id: '1705417132915460'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D9_nir.tif
+    md5: 92635530fb23c5c5870d9cd3579f8cbb
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088de2faf295e283031001
+        version_id: '1705417132388621'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D9_red.tif
+    md5: 5cb3f7b03b18077730c9be7a9a1afd67
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c7e2d3f395e283031001
+        version_id: '1705417133846855'
+  - relpath: raw/training5/upper_right_300kg_Nitrogen_D9_red_edge.tif
+    md5: 91b6228ec9fc9e6da4ba488d33931c08
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088ebfd3f295e283031001
+        version_id: '1705417131745166'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A10_green.tif
+    md5: a622c8787bbe690ff6b8ea95bb1be887
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9c0f8f295e283031001
+        version_id: '1705417132351609'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A10_nir.tif
+    md5: 5948af4dd95a898a3173afe510f30c8f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e4b1d4f295e283031001
+        version_id: '1705417131759844'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A10_red.tif
+    md5: 35d8d4c286d78058b02f7ad43152d97e
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0890d4dff495e283031001
+        version_id: '1705417136138768'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A10_red_edge.tif
+    md5: 0b07150fe35fc89cd8dad58c5c71e959
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c48cb4f395e283031001
+        version_id: '1705417133327940'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A1_green.tif
+    md5: 9ec6cf6363a734bdf4b16cd571802a95
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c8b490f595e283031001
+        version_id: '1705417136937544'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A1_nir.tif
+    md5: 5c83e0997e534135cfb37dbd2205aea7
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e889b3f395e283031001
+        version_id: '1705417133311208'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A1_red.tif
+    md5: 2b9275af157ade51adf7420441f909a4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a1b39ef595e283031001
+        version_id: '1705417137166753'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A1_red_edge.tif
+    md5: e255fc5fb704bd3096e55bc5b695c7fa
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0895c2d8f495e283031001
+        version_id: '1705417136021781'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A2_green.tif
+    md5: bd910ddc62f5d8c9c9c72f214578c44c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ccdd9bf495e283031001
+        version_id: '1705417135025868'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A2_nir.tif
+    md5: 0f6765b0d8c1a88aab54a7fd052efa37
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f1f9edf295e283031001
+        version_id: '1705417132178673'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A2_red.tif
+    md5: cbde714977175714cca3829bf7ff6fe9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08908da4f595e283031001
+        version_id: '1705417137260176'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A2_red_edge.tif
+    md5: 6d0bdf9fd283c1a45549fd1286bde6b8
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e9d69ef595e283031001
+        version_id: '1705417137171305'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A3_green.tif
+    md5: deaa6ddbe56444cfd36206b80f6cf6d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f692fbf395e283031001
+        version_id: '1705417134492022'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A3_nir.tif
+    md5: 67873156b071be409d1bbb0dce5f240a
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f9be92f495e283031001
+        version_id: '1705417134874489'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A3_red.tif
+    md5: 6de84e64e38a03d3967b1c21b3b1e163
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e6d5b6f295e283031001
+        version_id: '1705417131272934'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A3_red_edge.tif
+    md5: 6b4340568c824b24ed7bd395ac2b1c5d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0899daabf495e283031001
+        version_id: '1705417135287577'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A4_green.tif
+    md5: 9902a6735e7e6a723a3e2eee0494e05b
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ff8cd2f395e283031001
+        version_id: '1705417133819519'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A4_nir.tif
+    md5: beda06a524cc39acbdcdcc04972ab2d9
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 088bb483f495e283031001
+        version_id: '1705417134627339'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A4_red.tif
+    md5: 59afdbfd0b1c4b7c76c5846725f82ad5
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0880ef98f595e283031001
+        version_id: '1705417137076096'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A4_red_edge.tif
+    md5: f71de00140f919c65e7d856f830cc252
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f7b4d3f495e283031001
+        version_id: '1705417135938167'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A5_green.tif
+    md5: 1494f499fe84e74b8041f4ab2dbf8300
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eaa8a4f495e283031001
+        version_id: '1705417135166570'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A5_nir.tif
+    md5: 6fe16563279e56e5a7eafdd80818be20
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ecc3ebf495e283031001
+        version_id: '1705417136333292'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A5_red.tif
+    md5: 3b3383e681ee8685c8bd2958736a325c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08b2c886f595e283031001
+        version_id: '1705417136776242'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A5_red_edge.tif
+    md5: 44839b74df3da153af03d16a20a31178
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08ca87c1f395e283031001
+        version_id: '1705417133540298'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A6_green.tif
+    md5: fc703184467ad59262c484fe6db71e7f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08e7daf2f395e283031001
+        version_id: '1705417134353767'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A6_nir.tif
+    md5: 6600a8680671112087d795202d5cb276
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aaf9b2f395e283031001
+        version_id: '1705417133309098'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A6_red.tif
+    md5: 2ac574810f6c24ccebb6b94e419c70fe
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08eebd89f395e283031001
+        version_id: '1705417132629742'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A6_red_edge.tif
+    md5: abd8ac26e827e68a9bac45e6244eb864
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08aaa0f7f495e283031001
+        version_id: '1705417136525354'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A7_green.tif
+    md5: 037e72cdb1f43d84eb4adbf2183f18c2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3e5a8f495e283031001
+        version_id: '1705417135239875'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A7_nir.tif
+    md5: bdca8224cf5423705b944d7ef02c8c5d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08f1ddb9f495e283031001
+        version_id: '1705417135517425'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A7_red.tif
+    md5: c2af829823867c56f44c701f2c2ecc56
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08c3b3d3f495e283031001
+        version_id: '1705417135937987'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A7_red_edge.tif
+    md5: 6aba9c0cf874e5b895473b2067fe2c26
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a2f19ff495e283031001
+        version_id: '1705417135093922'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A8_green.tif
+    md5: 0c47816fd293aadaf2134cccd2da6503
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886b2e1f495e283031001
+        version_id: '1705417136167174'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A8_nir.tif
+    md5: f0e38b3fb3b76070f7bc9a2ede43e29c
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089fb2b9f495e283031001
+        version_id: '1705417135511839'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A8_red.tif
+    md5: 1481263dae3c02a22dc1763b81b8a39f
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08d3a7adf495e283031001
+        version_id: '1705417135313875'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A8_red_edge.tif
+    md5: a564cd0010d76bd967e554069bafb245
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08a9b9fcf395e283031001
+        version_id: '1705417134513321'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A9_green.tif
+    md5: 024314b1ee111766d2ea9e3cd0a7408d
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08dac5ddf395e283031001
+        version_id: '1705417134007002'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A9_nir.tif
+    md5: 8995667eb1172876e698bcfaa5aa0309
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 0886ced1f495e283031001
+        version_id: '1705417135908614'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A9_red.tif
+    md5: 574479108e4fea91c36ee8bf99440ac4
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 08879aebf495e283031001
+        version_id: '1705417136327943'
+  - relpath: raw/training5/upper_right_zerokg_Nitrogen_A9_red_edge.tif
+    md5: 083ace4ab818ef1f869309552d938ab2
+    size: 67974
+    cloud:
+      remote_storage:
+        etag: 089fc0a9f395e283031001
+        version_id: '1705417133154335'

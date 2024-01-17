@@ -6,14 +6,14 @@ if __name__ == "__main__":
 
     import torchvision.transforms.functional as TF
     from torchvision import transforms
-    from PIL import Image
+    from PIL import Image 
     number_of_bands = 4
     # Specify the path to the folder containing your image data
 
     # training1 test1
     # finaltraining finaltest
 
-    # Uncomment below for non-mac
+    # Uncomment below for non-mac 
     # data_traning = r'data\raw\training5'
     # data_test = r'data\raw\test5'
 
@@ -25,6 +25,7 @@ if __name__ == "__main__":
     # Create empty lists to store the data and labels
     X_train, X_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)
     all_type_img_train,all_type_img_test = np.array([[]], dtype=np.float32), np.array([[]], dtype=np.float32)
+    #all_type_img_train,all_type_img_test = np.array([[]], dtype=np.float32), np.array([[]], dtype=np.float32)
     imageCatagory = 0
     y_train, y_test = np.array([], dtype=np.float32), np.array([], dtype=np.float32)
 
@@ -51,7 +52,7 @@ if __name__ == "__main__":
             # Extract the label from the filename or use a different method to assign labels
             # For example, you can name your files like "class_label_image1.tif"
             # Extract the class label from the filename¨
-        X_train = np.append(X_train, (all_type_img_train ))
+        X_train = np.append(X_train, (all_type_img_train))
         del all_type_img_train
 
         if imageCatagory == number_of_bands:
