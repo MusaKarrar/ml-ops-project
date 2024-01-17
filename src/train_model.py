@@ -8,10 +8,9 @@ from models.model import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb
-import hydra
 from omegaconf import OmegaConf
 
-@hydra.main(config_path = "config", config_name = "config_model.yaml")
+#@hydra.main(config_path = "config", config_name = "config_model.yaml") we dont use hydra, we use omegaconf
 
 
 def train(config):
