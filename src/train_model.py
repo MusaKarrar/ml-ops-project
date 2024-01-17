@@ -8,6 +8,17 @@ from models.model import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb
+import logging
+import hydra
+
+log = logging.getLogger(__config_model__)
+
+@hydra.main(config_path = "config", config_name = "config_model.yaml")
+def train(config):
+    """ Train the ViT on our dataset"""
+    print(f"Configuration: \n{OmegaConf.to_yaml(config)}")
+    hparams = config.model_type
+    torch.manual_seed(hparams["seed"]) 
 
 sweep_config = {
     'name': 'sweep',
