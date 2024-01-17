@@ -3,26 +3,54 @@ outs:
   path: data
   files:
   - relpath: .DS_Store
-    md5: d8fc01ace48d9f272e6c497426328a8f
+    md5: bd2edd4782cbdf34f5ba8f3262518c8a
     size: 6148
     cloud:
       remote_storage:
-        etag: 08e7f290f195e283031001
-        version_id: '1705417128556903'
+        etag: 08abc99fe9e0e483031001
+        version_id: '1705505964156075'
+  - relpath: processed/test_images.pt
+    md5: 44f3ba48e4cbb122ae4a2b3114bf4d30
+    size: 10855600
+    cloud:
+      remote_storage:
+        etag: 08abae9cece0e483031001
+        version_id: '1705505970394923'
+  - relpath: processed/test_targets.pt
+    md5: 6ce3d839b29a83b6e0a9c6a0a2a921ab
+    size: 1333
+    cloud:
+      remote_storage:
+        etag: 08868fb1e9e0e483031001
+        version_id: '1705505964443526'
+  - relpath: processed/train_images.pt
+    md5: aa37f263f3e926b8b1958f57968a3a50
+    size: 32564405
+    cloud:
+      remote_storage:
+        etag: 0894858eeee0e483031001
+        version_id: '1705505974354580'
+  - relpath: processed/train_targets.pt
+    md5: d6127438861677763c42ae1fcde35c3d
+    size: 1658
+    cloud:
+      remote_storage:
+        etag: 08f3b9aee9e0e483031001
+        version_id: '1705505964399859'
   - relpath: raw/.DS_Store
-    md5: 58a0b02e24700d7e7d0358afe46672d6
-    size: 6148
+    md5: 946b1463bafbcdc1ec3819ba88c590fc
+    size: 8196
     cloud:
       remote_storage:
-        etag: 08b2efa9f195e283031001
-        version_id: '1705417128966066'
+        etag: 08aee1b0e9e0e483031001
+        version_id: '1705505964437678'
   - relpath: raw/test5/.DS_Store
-    md5: 6b6e78ae165311ee09cc863aef546d78
+    md5: 32d36b1370888fefe634316bed527828
     size: 24580
     cloud:
       remote_storage:
-        etag: 08f2a8cff195e283031001
-        version_id: '1705417129579634'
+        etag: 08c196b2e9e0e483031001
+        version_id: '1705505964460865'
   - relpath: raw/test5/lower_right_100kg_Nitrogen_B10_green.tif
     md5: cf839b3a1cd22ffde4ae63bbcfff7c7d
     size: 67974
@@ -1143,13 +1171,6 @@ outs:
       remote_storage:
         etag: 08e383c2f195e283031001
         version_id: '1705417129361891'
-  - relpath: raw/test5/test.zip
-    md5: e62c7ff8a51ea5d94c05399e8a51846c
-    size: 9117078
-    cloud:
-      remote_storage:
-        etag: 08e088ecf295e283031001
-        version_id: '1705417132147808'
   - relpath: raw/training5/lower_left_100kg_Nitrogen_B10_green.tif
     md5: 153d9a238d6680ca842cf060debd210f
     size: 67974
@@ -2270,13 +2291,6 @@ outs:
       remote_storage:
         etag: 088fc181f495e283031001
         version_id: '1705417134596239'
-  - relpath: raw/training5/training.zip
-    md5: c7617b100599346fd9bcf44bd5582e0b
-    size: 27400386
-    cloud:
-      remote_storage:
-        etag: 08a8f8d7f595e283031001
-        version_id: '1705417138109480'
   - relpath: raw/training5/upper_left_100kg_Nitrogen_B10_green.tif
     md5: c2d0b50291c8d50b1582c50a22c71cf7
     size: 67974
