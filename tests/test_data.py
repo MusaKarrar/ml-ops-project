@@ -1,5 +1,6 @@
-from tests import _N
 import torch, os
+from omegaconf import OmegaConf
+from tests import _config_file
 
 def check_dataset(data_file, data_group_name, is_train_file):
     data_file_shape = data_file.shape
@@ -19,6 +20,8 @@ def test_data():
     """
     test that data is loaded correctly
     """
+    cfg = OmegaConf.load(_config_file)
+
     dataset_names = os.listdir("data/processed/")
     train_images = [torch.load("data/processed/" + dataset_names[i]) for i in range(len(dataset_names)) if 'train_images' in dataset_names[i]]
     train_targets = [torch.load("data/processed/" + dataset_names[i]) for i in range(len(dataset_names)) if 'train_targets' in dataset_names[i]]
@@ -27,7 +30,7 @@ def test_data():
 
 
     for index, data_group in enumerate([train_images,test_images]):
-        N = _N[index]
+        N = cfg.defaults.N_obs[index]
         group_name = ['training images', 'test images'][index]
 
         observations = 0
@@ -37,7 +40,7 @@ def test_data():
         assert observations == N, "Expected %s observations, got %s in %s" % (N, observations, data_group)
     
     for index, data_group in enumerate([train_targets,test_targets]):
-        N = _N[index]
+        N = cfg.defaults.N_obs[index]
         group_name = ['training targets', 'test targets'][index]
 
         observations = 0

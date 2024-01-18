@@ -34,3 +34,4 @@ defaults:
   val_split: 0.05
   batch_size: 16
   train_data_path: data/processed/train_images.pt
+  N_obs: [120,40]
