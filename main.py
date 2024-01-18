@@ -1,11 +1,10 @@
 # app.py
 from fastapi import FastAPI, UploadFile, File, HTTPException
 import torch
-from src.models.model import ViT  # Assuming you have a ViT model
+from src.models.transformer import *  # Assuming you have a ViT model
 from torchvision import transforms
 from PIL import Image
 from pydantic import BaseModel
-from src.train_model import train
 
 app = FastAPI()
 
@@ -15,18 +14,12 @@ class TrainingConfig(BaseModel):
     epochs: int
     ckpt_name: str
 
-@app.post("/train/")
-async def train_model(config: TrainingConfig):
-    try:
-        # Invoke the training function with the provided configuration
-        train(config.dict())
-        return {"message": "Training completed successfully!"}
-    except Exception as e:
-        return HTTPException(status_code=500, detail=str(e))
-
 # Load the pre-trained model
-model = ViT()
-model.load_state_dict(torch.load("models/run_4/ckpt_1.pth", map_location=torch.device('cpu')))
+model = ViT
+checkpoint = torch.load('models/run_3/ckpt_1.pth')
+print(checkpoint.keys())
+
+model.load_state_dict(torch.load("models/run_3/ckpt_1.pth", map_location=torch.device('cpu')))
 model.eval()
 
 # Define image transformation

@@ -37,7 +37,7 @@ class PatchEmbedding(nn.Module):
         b, n, _ = x.shape
         cls_tokens = repeat(self.cls_token, '1 1 d -> b 1 d', b = b)
         x = torch.cat((cls_tokens, x), dim=1)
-        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype)
+        x += self.pos_embedding[:, :(n + 1)].to('cuda', dtype=x.dtype) if torch.cuda.is_available() else self.pos_embedding[:, :(n + 1)]
         return x
 
 class MultiHeadAttentionBlock(nn.Module):

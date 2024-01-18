@@ -4,8 +4,8 @@ import argparse
 import torch
 from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler
 
-from src.models.transformer import *
-from src.models.convnet import *
+from models.transformer import *
+from models.convnet import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb
@@ -69,7 +69,7 @@ def train(cfg):
     print("Training day and night")
    
 
-    #model = ConvNet2D()
+    model = ConvNet2D()
 
     # Initialize watch to log grandients / parameters
     if cfg.defaults.model_type == "ViT":
