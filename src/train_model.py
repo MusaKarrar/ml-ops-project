@@ -4,7 +4,8 @@ import argparse
 import torch
 from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler
 
-from models.model import *
+from src.models.transformer import *
+from src.models.convnet import *
 from visualizations.visualize import *
 from sklearn.model_selection import train_test_split
 import wandb

@@ -3,7 +3,8 @@ import argparse
 import numpy as np
 import torch
 
-from src.models.model import ConvNet2D
+from src.models.transformer import *
+from src.models.convnet import *
 
 
 def predict(model: torch.nn.Module, dataloader: torch.utils.data.DataLoader) -> None:

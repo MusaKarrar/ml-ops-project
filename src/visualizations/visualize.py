@@ -7,7 +7,7 @@ import numpy as np
 import torch
 from sklearn.manifold import TSNE
 
-from models.model import *
+from src.models.transformer import *
 
 parser = argparse.ArgumentParser(description="Script for training model")
 parser.add_argument("--model_path", default="models/run_2/ckpt_1.pth", help="trained model_weights path")

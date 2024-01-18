@@ -1,6 +1,7 @@
 from tests import _model_path, _test_images_path, _test_targets_path, _config_file
 import torch
-from src.models.model import ViT, ConvNet2D
+from src.models.transformer import ViT
+from src.models.convnet import ConvNet2D
 from omegaconf import OmegaConf
 
 def predict(model: torch.nn.Module, dataloader: torch.utils.data.DataLoader) -> None:
