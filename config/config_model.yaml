@@ -20,7 +20,7 @@ hyperparameters_CNN:
   in_channels: 4
   out_features: 1
   lr: 1e-3
-  epochs: 5
+  epochs: 3
   maxpool_dim: 2
   kernel_size_layer1: 5
   kernel_size_layer2: 3
@@ -29,9 +29,13 @@ hyperparameters_CNN:
 
 
 defaults:
-  model_type: ViT
+  model_type: ConvNet2D
   ckpt_name: "ckpt_1.pth"
   val_split: 0.05
   batch_size: 16
   train_data_path: data/processed/train_images.pt
   N_obs: [120,40]
+  data_for_model_inference_path: data/processed/test_images.pt
+  targets_for_model_inference_path: data/processed/test_targets.pt
+  run_num_for_inference: 3 #run 3 is the best model - it uses convnet2d. For ViT, last layer to softplus and not normalize the output should be used...
+  

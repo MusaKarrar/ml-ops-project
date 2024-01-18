@@ -14,8 +14,8 @@ class PatchEmbedding(nn.Module):
     def __init__(self,in_channels, d_model, img_shape, patch_shape):
         super(PatchEmbedding, self).__init__()
         self.d_model = d_model
-        self.patch_height, self.patch_width = eval(patch_shape)
-        self.image_height, self.image_width = eval(img_shape)
+        self.patch_height, self.patch_width = eval(patch_shape) if type(patch_shape) is not tuple else patch_shape
+        self.image_height, self.image_width = eval(img_shape) if type(img_shape) is not tuple else img_shape
 
         self.patch_dim = in_channels * self.patch_height * self.patch_width
         self.num_patches = (self.image_height // self.patch_height) * (self.image_width // self.patch_width)
