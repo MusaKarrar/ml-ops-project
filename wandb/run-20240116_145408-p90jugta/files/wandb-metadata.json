@@ -1,0 +1,37 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.10.9",
+    "heartbeatAt": "2024-01-16T13:54:08.786046",
+    "startedAt": "2024-01-16T13:54:08.151003",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/karrar/Desktop/MLO-Minst/ml-ops-project/src/train_model.py",
+    "codePathLocal": "src/train_model.py",
+    "codePath": "src/train_model.py",
+    "git": {
+        "remote": "https://github.com/MusaKarrar/ml-ops-project.git",
+        "commit": "facbf03078343e1dc8a04c2774ef1c01d637c9db"
+    },
+    "email": "126349464+MusaKarrar@users.noreply.github.com",
+    "root": "/Users/karrar/Desktop/MLO-Minst/ml-ops-project",
+    "host": "karrars-mbp.students.clients.local",
+    "username": "karrar",
+    "executable": "/Users/karrar/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 249.91275787353516
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

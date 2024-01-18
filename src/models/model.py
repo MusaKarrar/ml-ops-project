@@ -12,19 +12,20 @@ class ConvNet2D(nn.Module):
         out_features: number of output features
     
     """
-    def __init__(self):
+    def __init__(self, img_shape, in_channels, conv_features_layer1, conv_features_layer2, kernel_size_layer1, kernel_size_layer2, maxpool_dim):
         super().__init__()
-        # torch.set_default_dtype(torch.float32)
-        self.conv1 = nn.Conv2d(4, 64, 5)  # [B, 1, 160, 106] --> [B, 64, 156, 102]
-        self.conv2 = nn.Conv2d(64, 64, 3)  # [B, 64, 156, 102] --> [B, 64, 154, 100]
-        self.maxpool2 = nn.MaxPool2d(2, padding=0)  # [B, 64, 154, 100] --> [B, 64, 77, 50]
-
-        self.fc3 = nn.Linear(64 * 77 * 50, 1)
-
+        self.img_shape = img_shape #this should bea variable also and not a constant
+        self.conv1 = nn.Conv2d(in_channels, conv_features_layer1, kernel_size_layer1)  # [B, 1, 160, 106] --> [B, 64, 156, 102]
+        self.conv2 = nn.Conv2d(conv_features_layer1, conv_features_layer2, kernel_size_layer2)  # [B, 64, 156, 102] --> [B, 64, 154, 100]
+        self.maxpool2 = nn.MaxPool2d(maxpool_dim, padding=0)  # [B, 64, 154, 100] --> [B, 64, 77, 50]
+        dim_reduction = (kernel_size_layer1 - 1) + (kernel_size_layer2 - 1)
+        reduced_img_shape = [self.img_shape[0] - dim_reduction, self.img_shape[1] - dim_reduction]
+        reduced_img_shape = [reduced_img_shape[0] // maxpool_dim, reduced_img_shape[1] // maxpool_dim]
+        self.fc3 = nn.Linear(conv_features_layer2 * reduced_img_shape[0] * reduced_img_shape[1], 1)
         self.relu = nn.ReLU()
         #self.softmax = nn.Softmax(1) don't use activation for regression problem
-        self.batchnorm1 = torch.nn.BatchNorm2d(64)
-        self.batchnorm2 = torch.nn.BatchNorm2d(64)
+        self.batchnorm1 = torch.nn.BatchNorm2d(conv_features_layer1)
+        self.batchnorm2 = torch.nn.BatchNorm2d(conv_features_layer2)
         self.batchnorm3 = torch.nn.BatchNorm1d(1)
 
     def forward(self, x):
@@ -63,8 +64,8 @@ class PatchEmbedding(nn.Module):
     def __init__(self,in_channels, d_model, img_shape, patch_shape):
         super(PatchEmbedding, self).__init__()
         self.d_model = d_model
-        self.patch_height, self.patch_width = patch_shape
-        self.image_height, self.image_width = img_shape
+        self.patch_height, self.patch_width = eval(patch_shape)
+        self.image_height, self.image_width = eval(img_shape)
 
         self.patch_dim = in_channels * self.patch_height * self.patch_width
         self.num_patches = (self.image_height // self.patch_height) * (self.image_width // self.patch_width)
@@ -198,8 +199,7 @@ class ViT(nn.Module):
                dropout_rate = 0.2,
                mlp_size = 1048,
                num_heads = 4,
-               num_classes = 10,
-               batch_size = 64):
+               num_classes = 1): #regression problem, so only one output:
         super().__init__()
 
         self.patch_embedding_layer = PatchEmbedding(in_channels = in_channels,
