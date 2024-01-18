@@ -57,7 +57,8 @@ async def root():
     wandb.watch(model)
 
     test_tensor = torch.load(cfg.defaults.data_for_model_inference_path)
-    test_targets = torch.load(cfg.defaults.targets_for_model_inference_path)
+    if cfg.defaults.targets_for_model_inference_path is not None:
+        test_targets = torch.load(cfg.defaults.targets_for_model_inference_path)
 
     placeholder_targets = torch.zeros((test_tensor.shape[0], 1)) if test_targets is None else test_targets
 
