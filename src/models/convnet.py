@@ -21,7 +21,7 @@ class ConvNet2D(nn.Module):
         reduced_img_shape = [reduced_img_shape[0] // maxpool_dim, reduced_img_shape[1] // maxpool_dim]
         self.fc3 = nn.Linear(conv_features_layer2 * reduced_img_shape[0] * reduced_img_shape[1], 1)
         self.relu = nn.ReLU()
-        #self.softmax = nn.Softmax(1) don't use activation for regression problem
+        self.softplus = nn.Softplus() #Use softplus instead of softmax for regression w. positive values
         self.batchnorm1 = torch.nn.BatchNorm2d(conv_features_layer1)
         self.batchnorm2 = torch.nn.BatchNorm2d(conv_features_layer2)
         self.batchnorm3 = torch.nn.BatchNorm1d(1)
@@ -46,7 +46,5 @@ class ConvNet2D(nn.Module):
         x = self.maxpool2(x)
         x = torch.flatten(x, start_dim=1)
         x = self.fc3(x)
-        x = self.batchnorm3(x)
-        #x = self.softmax(x)
         return x
 

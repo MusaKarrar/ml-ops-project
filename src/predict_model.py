@@ -22,7 +22,6 @@ def predict(model: torch.nn.Module, dataloader: torch.utils.data.DataLoader) -> 
 
     return torch.cat([model(batch) for batch, _ in dataloader], 0)
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Your script description")
 
@@ -33,8 +32,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    model = my_awesome_model()
-    criterion = torch.nn.CrossEntropyLoss()
+    model = ViT()
+    criterion = torch.nn.L1Loss()
 
     model_weights = torch.load(args.model_path)
     model.load_state_dict(model_weights)

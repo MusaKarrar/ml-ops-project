@@ -114,7 +114,7 @@ def train(cfg):
 
     data_set = torch.utils.data.TensorDataset(train_images, train_targets)
 
-    train_loader = torch.utils.data.DataLoader(data_set, batch_size= cfg.defaults.batch_size, shuffle=True)
+    train_loader = torch.utils.data.DataLoader(data_set, batch_size= cfg.defaults.batch_size, shuffle=False)
 
     criterion = nn.L1Loss()
     optimizer = torch.optim.SGD(model.parameters(), lr=cfg.hyperparameters_ViT.lr if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.lr)
