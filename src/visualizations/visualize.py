@@ -70,7 +70,7 @@ def plot_conv_features(image_array, input_img, fig_save_path):
     pass
 
 
-def plot_TSNE_dim_reduction(train_images, train_targets, N, fig_save_path):
+def plot_TSNE_dim_reduction(train_images, train_targets, N):
     """Plot the TSNE dimension reduction of the train images.
     args:
         train_images: numpy array/tensor array of shape [>=N, 28, 28]
@@ -78,7 +78,10 @@ def plot_TSNE_dim_reduction(train_images, train_targets, N, fig_save_path):
         N: number of samples to plot
         fig_save_path: path to save the figure
     """
-    TSNE_features = TSNE_model.fit_transform(train_images[:N])
+    from sklearn.manifold import TSNE
+    TSNE_model = TSNE(n_components=2, random_state=0)
+    
+    TSNE_features = TSNE_model.fit_transform(train_images[:N].flatten(1))
 
     fig = plt.figure(figsize=(8, 8))
 
@@ -88,8 +91,8 @@ def plot_TSNE_dim_reduction(train_images, train_targets, N, fig_save_path):
     plt.legend()
     plt.tight_layout()
     # Then save here:
-    plt.savefig(os.path.join(fig_save_path, f"TSNE_reduction, N={N}.png"))
-    pass
+    #plt.savefig(os.path.join(fig_save_path, f"TSNE_reduction, N={N}.png"))
+    return fig
 
 
 if __name__ == "__main__":

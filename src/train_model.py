@@ -124,6 +124,7 @@ def train(cfg):
     with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA], record_shapes=True, on_trace_ready=tensorboard_trace_handler("./log/resnet18")) as prof:
         for epoch in range(cfg.hyperparameters_ViT.epochs if cfg.defaults.model_type == "ViT" else cfg.hyperparameters_CNN.epochs):
             running_loss = 0
+            count=0
             for images, labels in train_loader:
                 # add dim for conv2dnet
                 #convert dtype of images to long
@@ -132,12 +133,12 @@ def train(cfg):
                 output = output.flatten()
                 output = output.flatten()
                 loss = criterion(output, labels)
-                wandb.log({"Training Loss": loss.item()}) # Log loss to wandb
+                wandb.log({"Training Loss á iteration": loss.item()}) # Log loss to wandb
                 loss.backward()
                 optimizer.step()
                 running_loss += loss.item()
-
-            print(f"Training loss: {running_loss/len(train_targets)}")
+                count+=1
+            print(f"Training loss a epoch: {running_loss/count}")
             #print validation loss
             model.eval()
             output = model(val_images) # input does not have temporal structure/time dimension so we can just pass it as is. if we worked with text we would specify a mask.
@@ -152,7 +153,10 @@ def train(cfg):
             print(f"epoch: ", epoch + 1)
 
             train_loss_epoch.append(running_loss / len(train_targets))
-        
+
+    fig = plot_TSNE_dim_reduction(train_images, train_targets, len(train_targets))
+    wandb.log({"TSNE_dim_reduction": fig}) # Log TSNE dimension reduction to wandb
+
     # Save model to wandb and finish wandb run
     wandb.save(os.path.join(wandb.run.dir, cfg.defaults.ckpt_name)) 
     wandb.finish() 
@@ -168,7 +172,6 @@ def train(cfg):
 
             break
     
-
     print(f"done training and saved model to {save_path}")
 
     # Save the profiler output, uncomment below if tensorboard is not used
