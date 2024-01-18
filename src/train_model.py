@@ -51,7 +51,6 @@ if torch.cuda.is_available():
 else:
     print("GPU is not available. Switching to CPU.")
     gpu_available = False
-    gpu_available = False
 
 
 def train(cfg):
