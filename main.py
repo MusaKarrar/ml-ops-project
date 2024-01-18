@@ -1,11 +1,28 @@
 # app.py
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, HTTPException
 import torch
 from src.models.model import ViT  # Assuming you have a ViT model
 from torchvision import transforms
 from PIL import Image
+from pydantic import BaseModel
+from src.train_model import train
 
 app = FastAPI()
+
+class TrainingConfig(BaseModel):
+    # Define Pydantic models for the training configuration
+    lr: float
+    epochs: int
+    ckpt_name: str
+
+@app.post("/train/")
+async def train_model(config: TrainingConfig):
+    try:
+        # Invoke the training function with the provided configuration
+        train(config.dict())
+        return {"message": "Training completed successfully!"}
+    except Exception as e:
+        return HTTPException(status_code=500, detail=str(e))
 
 # Load the pre-trained model
 model = ViT()
