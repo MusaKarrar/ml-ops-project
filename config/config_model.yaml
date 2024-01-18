@@ -36,4 +36,6 @@ defaults:
   train_data_path: data/processed/train_images.pt
   N_obs: [120,40]
   data_for_model_inference_path: data/processed/test_images.pt
-  run_num_for_inference: 3
+  targets_for_model_inference_path: data/processed/test_targets.pt
+  run_num_for_inference: 3 #run 3 is the best model - it uses convnet2d. For ViT, last layer to softplus and not normalize the output should be used...
+  

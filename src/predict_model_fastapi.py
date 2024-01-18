@@ -57,8 +57,9 @@ async def root():
     wandb.watch(model)
 
     test_tensor = torch.load(cfg.defaults.data_for_model_inference_path)
+    test_targets = torch.load(cfg.defaults.targets_for_model_inference_path)
 
-    placeholder_targets = torch.zeros((test_tensor.shape[0], 1))
+    placeholder_targets = torch.zeros((test_tensor.shape[0], 1)) if test_targets is None else test_targets
 
     testset = torch.utils.data.TensorDataset(test_tensor, placeholder_targets)
     dataloader = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=False)
@@ -66,5 +67,7 @@ async def root():
     predicted_data = predict(model, dataloader)
     wandb.log({"predicted_data": predicted_data})
     wandb.finish()
-
-    return predicted_data.tolist()
+    predicted_data = predicted_data.tolist()
+    test_targets = test_targets.tolist()
+    pred_vs_true = list(zip(predicted_data, test_targets))
+    return pred_vs_true if test_targets is not None else predicted_data
