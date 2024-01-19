@@ -433,7 +433,7 @@ However, since the docker image includes the data, which is under an NDA, the do
 
 ---   ![question 20](image4.png)  
 To show more in GCP Container Registry in images/train file show look like: 
-
+![question 20](imageforq20.png)  
 
 ---
 
