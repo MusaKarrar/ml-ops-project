@@ -290,7 +290,7 @@ We only tested for python version 3.10/3.11, since most of the members either ha
 --- While the approach to be followed by default was to use an argparser, we created a configuration file called config_model.yaml, created for listing the hyperparameters of both models used in our code i.e. the Vision Transformer as well as the CNN. While some hyperparameters were kept specific to each model and defined under their respective sections i.e. hyperparameters_ViT and hyperparameters_CNN, there were a few that could be defined under defaults as they were common to both. OmegaConf was then utilized in the training code(training_model.py) to call each one of these variables/constants whenever necessary.
 The following code snippet illustrates how OmegaConf was utilized for using hyperparameters while decoupling them from the mainstream model definition code:
 
-![question 12](https://github.com/MusaKarrar/ml-ops-project/tree/master/reports/image1.png?raw=true)
+![question 12](image1.png)
 
  ---
 
