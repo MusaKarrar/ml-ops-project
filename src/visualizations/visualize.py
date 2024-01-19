@@ -1,7 +1,6 @@
 import argparse
 import os
 
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
@@ -55,7 +54,7 @@ def plot_conv_features(image_array, input_img, fig_save_path):
                 input_img = input_img[0]
             img = input_img
             ax.imshow(img, cmap="gray")
-            ax.set_title(f"Input data")
+            ax.set_title("Input data")
         else:
             img = image_array[i - 1, :, :]
             ax.imshow(img, cmap="gray")

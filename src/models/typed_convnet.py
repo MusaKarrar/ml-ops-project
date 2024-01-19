@@ -1,5 +1,5 @@
 import torch
-from typing import Callable, Union, List, Optional, Tuple
+from typing import Tuple
 
 from torch import nn
 

@@ -1,6 +1,5 @@
 import os
 #os.environ["WAND_API_KEY"] = "45a126251197a416a091888a453d4628f32031f7"
-import argparse
 import torch
 from torch.profiler import profile, ProfilerActivity, tensorboard_trace_handler
 
@@ -147,10 +146,10 @@ def train(cfg):
 
             val_loss /= len(val_targets) 
             wandb.log({"val_loss": val_loss.item()}) # Log validation loss to wandb
-            print(f'Validation loss:', val_loss)
+            print('Validation loss:', val_loss)
             model.train()
 
-            print(f"epoch: ", epoch + 1)
+            print("epoch: ", epoch + 1)
 
             train_loss_epoch.append(running_loss / len(train_targets))
 
