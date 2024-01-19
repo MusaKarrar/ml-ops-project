@@ -176,7 +176,7 @@ Answer:
 
 The following code snippet illustrates how OmegaConf was utilized for using hyperparameters while decoupling them from the mainstream model definition code:
 
-`  `![](image (1).png)                                        ---
+`  `![](image1.png)                                        ---
 
 **Question 13**
 
@@ -204,9 +204,9 @@ Example: *As seen in the first image when we have tracked ... and ... which both
 
 Answer:
 
---- ![](image (1).png)The most important metrics to track are the training and validation loss, which can be seen in the two figures below the one big figure, since the training loss is decreasing over several iterations/steps, it tells us that the model is learning to fit better with the training data, which is a positive sign. With the validation loss also decreasing for each epoch (up to 5), it means it is doing better each time to generalize with unseen data. We can assess the difficulty of the problem in terms of classification by encoding in t-distributed stochastic neighbor encoding(TSNE), reducing the dimensionality to 2 and then looking at the overlap between the different classes in the first big picture (nitrogen content - 0,100,200,300), which is the image we have logged.
+--- ![](image2.png)The most important metrics to track are the training and validation loss, which can be seen in the two figures below the one big figure, since the training loss is decreasing over several iterations/steps, it tells us that the model is learning to fit better with the training data, which is a positive sign. With the validation loss also decreasing for each epoch (up to 5), it means it is doing better each time to generalize with unseen data. We can assess the difficulty of the problem in terms of classification by encoding in t-distributed stochastic neighbor encoding(TSNE), reducing the dimensionality to 2 and then looking at the overlap between the different classes in the first big picture (nitrogen content - 0,100,200,300), which is the image we have logged.
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.003.png)
+![](image3.png)
 
 As we can see in the second image with the bands of predicted data of nitrogen levels, the bands give us a clear picture of how all the numbers are clumb together within their respective nitrogen levels, which are at 0, 100, 200 and 300 and help us classify them. 
 
@@ -232,9 +232,9 @@ docker run --name EX1 gcr.io/nifty-atlas-410710/train:latest
 
 However, since the docker image includes the data, which is under an NDA, the docker images are set to private. It does work, documentation:
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.004.png)
+![](image4.png)
 
-As seen above, the pull works if one is permitted access to the docker image. Below, an unauthorized user tries to pull and it doesn’t work,![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.005.png)
+As seen above, the pull works if one is permitted access to the docker image. Below, an unauthorized user tries to pull and it doesn’t work,![](image5.png)
 
 ` `---
 
@@ -298,13 +298,13 @@ Answer:
 
 \---
 
-` `![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.006.png)
+` `![](image6.png)
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.007.png)
+![](image7.png)
 
 one example of the dataset we have in google cloud as test5 file is below:
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.008.png)
+![](image8.png)
 
 
 \---
@@ -317,11 +317,11 @@ Answer:
 
 \--- 
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.009.png)
+![](image9.png)
 
 To show more in GCP Container Registry in images/train file show look like: 
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.010.png)
+![](image10.png)
 
 ` `---
 
@@ -332,7 +332,7 @@ To show more in GCP Container Registry in images/train file show look like:
 Answer:
 
 
----![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.011.png) ---
+---![](image11.png) ---
 
 **Question 22**
 
@@ -346,7 +346,7 @@ Answer:
 
 --- We managed to deploy using FastAPI locally, by wrapping our model into an application using fastAPI. Every time a change is made in the python script which we use the ‘uvicorn’ command on, then the page is refreshed as inference on the test dataset is run again. Multiple tabs can be opened and inference is run independently for each of the tabs. What you see below is the predicted nitrogen content vs the ground truth with the ConvNet2C model (GT only shown if it exists, one can change the path of the test folder in the config file.)
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.012.png) 
+![](image12.png) 
 
 The specific command is ‘uvicorn src.predict\_model\_fastapi:app --reload’
 
@@ -402,7 +402,7 @@ Answer:
 
 —
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.013.png)
+![](image13.png)
 
 So there are 2 use-cases of our system architecture - the developer role and the user role. For a user, they can either pull the repository and run the code or pull an image from docker (needs authorization because the docker image contains the private data) to get an exact copy of the environment.
 
