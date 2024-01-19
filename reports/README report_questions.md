@@ -176,7 +176,7 @@ Answer:
 
 The following code snippet illustrates how OmegaConf was utilized for using hyperparameters while decoupling them from the mainstream model definition code:
 
-`  `![](image1.png)                                        ---
+`  `![](image (1).png)                                        ---
 
 **Question 13**
 
