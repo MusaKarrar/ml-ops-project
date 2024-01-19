@@ -431,7 +431,11 @@ However, since the docker image includes the data, which is under an NDA, the do
 >
 > Answer:
 
----   ![question 20](image4.png)  ---
+---   ![question 20](image4.png)  
+To show more in GCP Container Registry in images/train file show look like: 
+
+
+---
 
 ### Question 21
 
@@ -532,7 +536,7 @@ In total, the total amount of credits spent was $5.35
 > Answer:
 
 --- 
-
+ ![question 26](image8.png) 
 One of the major issues we had was time and task management, considering we did not finish the tasks within week 3, which is about monitoring, data drifting and distributed data and model loading. This was due to both time constraints and delegating the work all with different work loads, which meant we underestimated the time it takes to do some tasks and overestimated the time it took to do some other tasks, and also a lot of focus went to fixing up some of the prior issues we had with prior tasks.
 A big struggle was setting up GCP properly & especially the cloud deployment, we kept running into different errors. Also building docker with W&B. 
 Another big struggle we had was, that we had to be cautious of the data we have acquired from the company of one of our members, since we have signed the NDA. Specifically, we got authorization errors (One of the different errors we had, explained above) when trying to deploy our fastAPI app in the cloud (also when trying this on the owner of the GCP project). We also tried to create service accounts so multiple people could work on the GCP project, but could not make this work. 
