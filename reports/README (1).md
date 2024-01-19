@@ -105,7 +105,7 @@ end of the project.
 >
 > Answer:
 
---- question 1 fill here ---
+--- 25 ---
 
 ### Question 2
 > **Enter the study number for each member in the group**
@@ -116,7 +116,7 @@ end of the project.
 >
 > Answer:
 
---- question 2 fill here ---
+--- S204161, s220044 ,s230432 ,s223092, s184213  ---
 
 ### Question 3
 > **What framework did you choose to work with and did it help you complete the project?**
@@ -129,7 +129,7 @@ end of the project.
 >
 > Answer:
 
---- question 3 fill here ---
+--- We use pyTorch for training our model. We were able to create neural networks (a CNN and vision transformer (structure from https://arxiv.org/abs/2010.11929)). We used the package nn from torch for creating the neural networks. With Torch, we were able to create Transformer blocks and then let the number of transformer blocks be a hyperparameter - this would have been much more difficult if coding a ViT using numpy only. Optimizers, loss functions & dataloaders were also predefined from torch. Einops was used for the vision transformer. We also used W&B for logging data we get from the models. ---
 
 ## Coding environment
 
@@ -148,7 +148,14 @@ end of the project.
 >
 > Answer:
 
---- question 4 fill here ---
+---  We used conda for managing our dependencies. The first thing everybody did was to create a conda environment for this project & this helped with avoiding conflict errors. We used ‘pipreqs –force’ to generate a requirements.txt, which we then went through to make sure that the dependencies looked OK.. The new group member needs to have access to the git repository first, then clone the project. Then for the new group member to get a copy, we would use ‘pip install -r requirements.txt’ to ensure they have the right dependencies to run all the code. 
+The exact commands are:
+#create conda env
+conda create –name ml-ops-env python=3.10
+conda activate ml-ops-env
+git clone https://github.com/MusaKarrar/ml-ops-project.git
+pip install -r requirements.txt
+Alternatively, to get the EXACT copy one would pull the docker images we have built (on Cloud build).---
 
 ### Question 5
 
@@ -163,7 +170,7 @@ end of the project.
 > *experiments.*
 > Answer:
 
---- question 5 fill here ---
+--- The scripts we run to perform the experiment are in a src folder, while the data and results are outside of it such as figures from visualizations and confidential raw and processed data. This data cannot be acquired through the public github repository and can only be acquired with an agreement with the company providing the data. The results from wandb runs are also outside the src folder. We filled out configs, tests, updated dockerfiles, added folder for W&B info… The folders we did not fill out are notebooks, documentation for src (docs folder). We have also added a “bfg.jar” file outside the src folder, which is the repo cleaner progam just in case that the confidential data gets committed to the github repository to remove past commits. ---
 
 ### Question 6
 
@@ -174,7 +181,10 @@ end of the project.
 >
 > Answer:
 
---- question 6 fill here ---
+--- 
+
+We agreed that we would try to be PEP8 compliant (but we are mere mortals…). Because it can cause problems when many people work on a big project. If unlucky, one can spend a whole day debugging and find out that the error is because a capital S should have been used somewhere instead of a lowercase s amongst thousands of lines of code. We implemented typing in CNN class but ran out of time.   
+ ---
 
 ## Version control
 
@@ -193,7 +203,7 @@ end of the project.
 >
 > Answer:
 
---- question 7 fill here ---
+--- We have implemented 3 tests. In test_data,py we test whether the data has been loaded in correctly, by asserting if the shape is (N_obs,4,160,106). Where N_obs is a list defined in the config file [N_train,N_test] =  [120,40]. The test is not hardcoded to a single file, so assuming all training_images are named with the prefix ‘training_images’, then test_data.py would make sure that all N_train observations exist across all the training files. same for test files. test_construction.py makes sure that the image shape is divisible by the patch shape in both image dimensions (these shapes are defined in config_model.yaml). test_training_model.py makes sure that the loss of the trained model on test set is not unrealistically bad. ---
 
 ### Question 8
 
@@ -208,7 +218,7 @@ end of the project.
 >
 > Answer:
 
---- question 8 fill here ---
+--- Total coverage is 76%. 2 testfiles have 100% and the 3. tesfile has 95%. ‘coverage report -m’ reveals that the line in test_training.py, which is missing is line 41 where the CNN is defined inside an if-statement. Line 41 is not used because ViT is chosen and so line 41 is not triggered and coverage drops. model.py has coverage 70% (both models are defined in same python script, CNN function not triggered) and predict_model.py has coverage 27%. If coverage was 100%, then it does not mean code is error free - it only means that all lines of codes are triggered and used for something. Coverage would still be 100% for example if the test accuracy was incorrectly divided by a random number. ---
 
 ### Question 9
 
@@ -223,7 +233,7 @@ end of the project.
 >
 > Answer:
 
---- question 9 fill here ---
+--- Everyone had a branch they worked on, so we had 6 branches in total including the master branch. Some used the website to merge with after pulling and pushing to their own branch, while others used VS Code for pulling, pushing and merging. VS Code had a merging tool that was utilized by a few members. One member used github desktop for pulling, pushing and merging. For too complicated/big changes, the terminal or VS Code was used for merging. For everyone to be up to date, everyone will be pulling from the master branch, as that is the branch we ensure to be our up to date that does not have any major issues with the files and code. ---
 
 ### Question 10
 
@@ -238,7 +248,7 @@ end of the project.
 >
 > Answer:
 
---- question 10 fill here ---
+---  We did make use of DVC to manage the data and models in our project. It helped us resolve the issue of uploading confidential data to the github repository, since we wanted the github repository to be publicly available, considering it is a project assignment, but not the data. Therefore the data is stored through Google Drive privately through DVC. It was however not needed for storage efficiency, which is what DVC is great for. Well, it does help in terms of reproducibility, as it ensures the same data is used all the time throughout the experiments of models we have. For the future, it can also help us track the data, in case of changes of data, that is going to be made, or perhaps when we have a lot more models or data with larger file sizes, DVC is pretty useful. We then used google cloud buckets instead. ---
 
 ### Question 11
 
@@ -254,7 +264,11 @@ end of the project.
 >
 > Answer:
 
---- question 11 fill here ---
+--- We have tested different operating systems. MacOS and Windows were tested and both operating systems could run the code without problems. We tried to test it on Ubuntu, but there are some errors, as it should have been done within minutes. Currently, we can conclude that it is not working properly on Ubuntu for now., Our workflows are defined in our YAML file. We did not upload the data to github, which is why some of the workflow tests failed, specificly it tries to find the data in test_data.py, which is one of our 3 unit testing files (we also have test_construction.py and test_training.py). The YAML of our problem can be found here.
+We used linting (with ruff-package) on our src files & fixed most of the linting issues.
+Docker is also set up with version control, so every time an update/commit is made & when a VM is enabled in the Compute Engine, then a new docker image is built and saved to the docker registry in Cloud build.
+We only tested for python version 3.10/3.11, since most of the members either had python version 3.10 or 3.11. The most important aspect is to ensure that everyone could work on their python environment.
+ ---
 
 ## Running code and tracking experiments
 
@@ -273,7 +287,11 @@ end of the project.
 >
 > Answer:
 
---- question 12 fill here ---
+--- While the approach to be followed by default was to use an argparser, we created a configuration file called config_model.yaml, created for listing the hyperparameters of both models used in our code i.e. the Vision Transformer as well as the CNN. While some hyperparameters were kept specific to each model and defined under their respective sections i.e. hyperparameters_ViT and hyperparameters_CNN, there were a few that could be defined under defaults as they were common to both. OmegaConf was then utilized in the training code(training_model.py) to call each one of these variables/constants whenever necessary.
+The following code snippet illustrates how OmegaConf was utilized for using hyperparameters while decoupling them from the mainstream model definition code:
+
+
+ ---
 
 ### Question 13
 
