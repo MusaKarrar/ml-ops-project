@@ -176,7 +176,7 @@ Answer:
 
 The following code snippet illustrates how OmegaConf was utilized for using hyperparameters while decoupling them from the mainstream model definition code:
 
-`  `![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.001.png)                                        ---
+`  `![](image1.png)                                        ---
 
 **Question 13**
 
