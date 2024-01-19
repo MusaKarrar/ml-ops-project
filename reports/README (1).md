@@ -181,9 +181,10 @@ Alternatively, to get the EXACT copy one would pull the docker images we have bu
 >
 > Answer:
 
---- 
+--- We agreed that we would try to be PEP8 compliant (but we are mere mortals…). Because it can cause problems when many people work on a big project. If unlucky, one can spend a whole day debugging and find out that the error is because a capital S should have been used somewhere instead of a lowercase s amongst thousands of lines of code. We implemented typing in CNN class but ran out of time.
 
-We agreed that we would try to be PEP8 compliant (but we are mere mortals…). Because it can cause problems when many people work on a big project. If unlucky, one can spend a whole day debugging and find out that the error is because a capital S should have been used somewhere instead of a lowercase s amongst thousands of lines of code. We implemented typing in CNN class but ran out of time.   
+
+
  ---
 
 ## Version control
@@ -264,10 +265,11 @@ We agreed that we would try to be PEP8 compliant (but we are mere mortals…). B
 >
 > Answer:
 
---- We have tested different operating systems. MacOS and Windows were tested and both operating systems could run the code without problems. We tried to test it on Ubuntu, but there are some errors, as it should have been done within minutes. Currently, we can conclude that it is not working properly on Ubuntu for now., Our workflows are defined in our YAML file. We did not upload the data to github, which is why some of the workflow tests failed, specificly it tries to find the data in test_data.py, which is one of our 3 unit testing files (we also have test_construction.py and test_training.py). The YAML of our problem can be found here.
+---We have tested different operating systems. MacOS and Windows were tested and both operating systems could run the code without problems. We tried to test it on Ubuntu, but there are some errors, as it should have been done within minutes. Currently, we can conclude that it is not working properly on Ubuntu for now., Our workflows are defined in our YAML file. We did not upload the data to github, which is why some of the workflow tests failed, specifically it tries to find the data in test_data.py, which is one of our 3 unit testing files (we also have test_construction.py and test_training.py). The YAML of our problem can be found here.
 We used linting (with ruff-package) on our src files & fixed most of the linting issues.
 Docker is also set up with version control, so every time an update/commit is made & when a VM is enabled in the Compute Engine, then a new docker image is built and saved to the docker registry in Cloud build.
 We only tested for python version 3.10/3.11, since most of the members either had python version 3.10 or 3.11. The most important aspect is to ensure that everyone could work on their python environment.
+
  ---
 
 ## Running code and tracking experiments
@@ -307,8 +309,9 @@ The following code snippet illustrates how OmegaConf was utilized for using hype
 >
 > Answer:
 
---- We made use of OmegaConf to collect all information about hyperparameters and utilize them via the YAML configuration files to a format acceptable in the python training code. W&B was used to log these runs and the config file is also supplied to W&B for information storage. To reproduce the experiment, random seeds are used & the experiment should just be run using the supplied YAML file. 
+---  We made use of OmegaConf to collect all information about hyperparameters and utilize them via the YAML configuration files to a format acceptable in the python training code. W&B was used to log these runs and the config file is also supplied to W&B for information storage. To reproduce the experiment, random seeds are used & the experiment should just be run using the supplied YAML file. 
 This approach of utilizing the configuration  files ensured that any experiments done were not lost, hence fulfilling the reproducibility criteria. W&B also came in handy when being used for the aforementioned purpose for storing the information from the configuration file and hence this problem was tackled quite efficiently as per our beliefs.
+
  ---
 
 ### Question 14
@@ -537,10 +540,11 @@ In total, the total amount of credits spent was $5.35
 
 --- 
  ![question 26](image8.png) 
- 
+
 One of the major issues we had was time and task management, considering we did not finish the tasks within week 3, which is about monitoring, data drifting and distributed data and model loading. This was due to both time constraints and delegating the work all with different work loads, which meant we underestimated the time it takes to do some tasks and overestimated the time it took to do some other tasks, and also a lot of focus went to fixing up some of the prior issues we had with prior tasks.
 A big struggle was setting up GCP properly & especially the cloud deployment, we kept running into different errors. Also building docker with W&B. 
 Another big struggle we had was, that we had to be cautious of the data we have acquired from the company of one of our members, since we have signed the NDA. Specifically, we got authorization errors (One of the different errors we had, explained above) when trying to deploy our fastAPI app in the cloud (also when trying this on the owner of the GCP project). We also tried to create service accounts so multiple people could work on the GCP project, but could not make this work. 
+
  ---
 
 ### Question 27
