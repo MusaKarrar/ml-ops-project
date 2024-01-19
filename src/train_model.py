@@ -69,7 +69,7 @@ def train(cfg):
     print("Training day and night")
    
 
-    model = ConvNet2D()
+    model = ViT()
 
     # Initialize watch to log grandients / parameters
     if cfg.defaults.model_type == "ViT":
