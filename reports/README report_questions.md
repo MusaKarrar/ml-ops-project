@@ -471,7 +471,7 @@ Student: s230432 was in charge of cloud setup tasks such as creating the project
 
 
 
-![](Aspose.Words.25da072a-7e40-419c-b7c8-8fb9d2a49757.014.png)
+![](image14.png)
 
 
 
