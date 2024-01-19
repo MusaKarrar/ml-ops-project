@@ -350,7 +350,15 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 15 fill here ---
+---We developed a docker image for training, one for inference in the cloud using FastAPI and one for training in the cloud (cloud_build.yaml). We setup the train dockerfile in the cloud, such that it every time ‘git commit’ is ran on main branch, then docker builds and sends to the container registry. To get pull the docker image one can pull from the docker registry and run:
+docker pull gcr.io/nifty-atlas-410710/train:latest
+docker run --name EX1 gcr.io/nifty-atlas-410710/train:latest
+However, since the docker image includes the data, which is under an NDA, the docker images are set to private. It does work, documentation:
+ ![question 15](image10.png) 
+ As seen above, the pull works if one is permitted access to the docker image. Below, an unauthorized user tries to pull and it doesn’t work,
+  ![question 15](image6.png) 
+
+ ---
 
 ### Question 16
 
@@ -365,7 +373,7 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 16 fill here ---
+---Debugging was dependent on group member. One used the debug&run in VS Code, defining breakpoints & inspecting variables. We did some profiling on the train_model.py file both with cprofiling and pytorch profiling. Through the tensorboard, the model performance could be visualized, which can be launched directly through VS code. We can then view the results and analyze the performance of the model and identify the bottlenecks and issues that may affect the training speed. For example, on an apple m2 chip that utilities CPU, we found out that it had convolution_backward called 48 times, and a total time spent was at 34.77 seconds aka (34765607 microseconds), which is something that can be optimized, by looking into the convolutional layers. Optimization was not highly prioritized as the time was spent on working on the other parts of the project, but it proves that profiling is a great tool for model optimization. ---
 
 ## Working in the cloud
 
@@ -382,7 +390,14 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 17 fill here ---
+--- 
+
+1.Compute Engine: Engine is used for  running the virtual machines (VM) on Google Cloud platform and it  provides a flexible VM’s base one specific requirements including choice of CPU, memory and storage it also to customs images and it allows to package and deploy our software configuration and application to package. 
+2.Storages, Buckets: Storage is the service used to store/retrieve data and bucket is the container used for storing our data in the cloud (GCP)
+3.Cloud Build: Is the google cloud build that contains our continuous integration and automates the build, test and deployment of our stuff.
+4.Cloud Triggers: The cloud triggers are the google cloud functions. These are used for example in cases, where we upload the data into the storage bucket, it will automatically trigger the data processing tasks, which generates our processed data. This data is confidential, which is why it is stored here.  
+5. Vertex AI: it customs the job by running our custom training code including worker pool, machine types and do setting related to our Python training application and custom container
+ ---
 
 ### Question 18
 
@@ -397,7 +412,8 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 18 fill here ---
+---We rented out VMs using Compute Engine. We used a low-power/low-cost VM because our model size & dataset is not very big, so we did not need much compute and memory. For our project, we used series E2 (linux-amd64) which is a low cost and day to day computing with a small memory range between 1-128GB. It also has a feature of confidential service and is able to deploy a container image in this VM instance. We utilized features of VM instances tailored to our project requirements; we opted VM instance with e2-medium 1-2 vCPU and memory 4GB, as it mentioned before our dataset is small, so we used the lowest memory range. We did make sure to support GPU usage in our script if it was available, so we would have been able to utilize the computing power of the cloud, however there was no need for this, because our small model and dataset size.
+ ---
 
 ### Question 19
 
@@ -415,7 +431,7 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 20 fill here ---
+---   ![question 20](image4.png)  ---
 
 ### Question 21
 
@@ -424,7 +440,7 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 21 fill here ---
+--- ![question 21](image3.png) ---
 
 ### Question 22
 
@@ -440,7 +456,11 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 22 fill here ---
+--- We managed to deploy using FastAPI locally, by wrapping our model into an application using fastAPI. Every time a change is made in the python script which we use the ‘uvicorn’ command on, then the page is refreshed as inference on the test dataset is run again. Multiple tabs can be opened and inference is run independently for each of the tabs. What you see below is the predicted nitrogen content vs the ground truth with the ConvNet2C model (GT only shown if it exists, one can change the path of the test folder in the config file.) 
+ ![question 22](image7.png) 
+ The specific command is ‘uvicorn src.predict_model_fastapi:app --reload’
+
+---
 
 ### Question 23
 
@@ -455,7 +475,7 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 23 fill here ---
+--- Sadly, we didn’t. If we had monitoring, then one of the things we would be able to spot, if we monitored memory usage on the deployed model, is cache-buildup or memory leak.  ---
 
 ### Question 24
 
@@ -469,7 +489,14 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 24 fill here ---
+--- 
+
+s204161 used 0.01 USD (Creating a bucket, which was not used)
+Karrar Adam (s230432), since I am the one in the group who used Compute Engine in GCP to build the buckets, using container registry and cloud build. I used $5.34 (the dataset  and the model we build were not that big, so we didn’t used much credits)
+
+
+In total, the total amount of credits spent was $5.35
+ ---
 
 ## Overall discussion of project
 
@@ -504,7 +531,12 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 26 fill here ---
+--- 
+
+One of the major issues we had was time and task management, considering we did not finish the tasks within week 3, which is about monitoring, data drifting and distributed data and model loading. This was due to both time constraints and delegating the work all with different work loads, which meant we underestimated the time it takes to do some tasks and overestimated the time it took to do some other tasks, and also a lot of focus went to fixing up some of the prior issues we had with prior tasks.
+A big struggle was setting up GCP properly & especially the cloud deployment, we kept running into different errors. Also building docker with W&B. 
+Another big struggle we had was, that we had to be cautious of the data we have acquired from the company of one of our members, since we have signed the NDA. Specifically, we got authorization errors (One of the different errors we had, explained above) when trying to deploy our fastAPI app in the cloud (also when trying this on the owner of the GCP project). We also tried to create service accounts so multiple people could work on the GCP project, but could not make this work. 
+ ---
 
 ### Question 27
 
@@ -521,4 +553,12 @@ We did not perform hyperparameters sweep, since we stumbled upon issues performi
 >
 > Answer:
 
---- question 27 fill here ---
+--- Student s204161 was in charge of setting up the initial cookiecutter project, creating the ViT model & unit testing.
+Student s223092 was in charge of contacting the company Aerial Tools for the data, and for the workflow of this project. Student s223092 also created code for visualization and preprocessing the data.
+Student s220044 was responsible for creating the YAML configuration file for listing out all hyperparameters belonging to both models and using Hydra and OmegaConf to load them while decoupling them from the mainstream model definition code. 
+Besides, he also dealt with typing for the CNN model to ensure good coding practice and PEP8 compliance as required in the course.
+Student s184213 was in charge of initial DVC, profiling the train model, logging the data onto wandb and working together with s204161 to set up deployment of FastAPI.
+Student s230432 was in charge of formatting, saving the processed data, setting up the docker and getting some continuous integration to work.
+Also see the MLOps Work Plan for the list we used to delegate different tasks.
+(https://docs.google.com/document/d/1lLLNnOMxulvgJ_XtQBqTcpUVArmR-BCf2veG_gLhQXo/edit?usp=sharing) 
+---
