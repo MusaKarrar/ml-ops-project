@@ -307,7 +307,9 @@ The following code snippet illustrates how OmegaConf was utilized for using hype
 >
 > Answer:
 
---- question 13 fill here ---
+--- We made use of OmegaConf to collect all information about hyperparameters and utilize them via the YAML configuration files to a format acceptable in the python training code. W&B was used to log these runs and the config file is also supplied to W&B for information storage. To reproduce the experiment, random seeds are used & the experiment should just be run using the supplied YAML file. 
+This approach of utilizing the configuration  files ensured that any experiments done were not lost, hence fulfilling the reproducibility criteria. W&B also came in handy when being used for the aforementioned purpose for storing the information from the configuration file and hence this problem was tackled quite efficiently as per our beliefs.
+ ---
 
 ### Question 14
 
@@ -324,7 +326,16 @@ The following code snippet illustrates how OmegaConf was utilized for using hype
 >
 > Answer:
 
---- question 14 fill here ---
+
+
+--- ![question 14](image11.png) The most important metrics to track are the training and validation loss, which can be seen in the two figures below the one big figure, since the training loss is decreasing over several iterations/steps, it tells us that the model is learning to fit better with the training data, which is a positive sign. With the validation loss also decreasing for each epoch (up to 5), it means it is doing better each time to generalize with unseen data. We can assess the difficulty of the problem in terms of classification by encoding in t-distributed stochastic neighbor encoding(TSNE), reducing the dimensionality to 2 and then looking at the overlap between the different classes in the first big picture (nitrogen content - 0,100,200,300), which is the image we have logged.
+
+![question 14](image2.png) 
+
+
+As we can see in the second image with the bands of predicted data of nitrogen levels, the bands give us a clear picture of how all the numbers are clumb together within their respective nitrogen levels, which are at 0, 100, 200 and 300 and help us classify them. 
+We did not perform hyperparameters sweep, since we stumbled upon issues performing them.
+---
 
 ### Question 15
 
