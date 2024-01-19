@@ -415,7 +415,8 @@ However, since the docker image includes the data, which is under an NDA, the do
 >
 > Answer:
 
----We rented out VMs using Compute Engine. We used a low-power/low-cost VM because our model size & dataset is not very big, so we did not need much compute and memory. For our project, we used series E2 (linux-amd64) which is a low cost and day to day computing with a small memory range between 1-128GB. It also has a feature of confidential service and is able to deploy a container image in this VM instance. We utilized features of VM instances tailored to our project requirements; we opted VM instance with e2-medium 1-2 vCPU and memory 4GB, as it mentioned before our dataset is small, so we used the lowest memory range. We did make sure to support GPU usage in our script if it was available, so we would have been able to utilize the computing power of the cloud, however there was no need for this, because our small model and dataset size.
+---We rented out VMs using Compute Engine. We used a low-power/low-cost VM because our model size & dataset is not very big, so we did not need much compute and memory. For our project, we used series E2 (linux-amd64) which is a low cost and day to day computing with a small memory range between 1-128GB. It also has a feature of confidential service and is able to deploy a container image in this VM instance. We utilized features of VM instances tailored to our project requirements; we opted VM instance with e2-medium 1-2 vCPU and memory 4GB, as it mentioned before our dataset is small, so we used the lowest memory range. We did make sure to support GPU usage in our script if it was available, so we would have been able to utilize the computing power of the cloud, however there was no need for this, because our small model and dataset size
+
  ---
 
 ### Question 19
